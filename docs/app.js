@@ -3,6 +3,36 @@
  * Sin dependencias externas.
  */
 
+// ── Banderas (flagcdn.com, sin descarga local) ────────────────────────────────
+
+const TEAM_FLAGS = {
+  // Grupos WC 2026
+  Mexico: 'mx', 'South Africa': 'za', 'South Korea': 'kr', Czechia: 'cz',
+  Canada: 'ca', 'Bosnia and Herzegovina': 'ba', Qatar: 'qa', Switzerland: 'ch',
+  Brazil: 'br', Morocco: 'ma', Haiti: 'ht', Scotland: 'gb-sct',
+  USA: 'us', Paraguay: 'py', Australia: 'au', Turkey: 'tr',
+  Germany: 'de', 'Curaçao': 'cw', "Côte d'Ivoire": 'ci', Ecuador: 'ec',
+  Netherlands: 'nl', Japan: 'jp', Sweden: 'se', Tunisia: 'tn',
+  Belgium: 'be', Egypt: 'eg', Iran: 'ir', 'New Zealand': 'nz',
+  Spain: 'es', 'Cape Verde': 'cv', 'Saudi Arabia': 'sa', Uruguay: 'uy',
+  France: 'fr', Senegal: 'sn', Iraq: 'iq', Norway: 'no',
+  Argentina: 'ar', Algeria: 'dz', Austria: 'at', Jordan: 'jo',
+  Portugal: 'pt', 'DR Congo': 'cd', Uzbekistan: 'uz', Colombia: 'co',
+  England: 'gb-eng', Croatia: 'hr', Ghana: 'gh', Panama: 'pa',
+};
+
+function flagImg(team, displaySize = 20) {
+  const code = TEAM_FLAGS[team];
+  if (!code) return null;
+  const img = document.createElement('img');
+  img.src = `https://flagcdn.com/w20/${code}.png`;
+  img.alt = team;
+  img.width = displaySize;
+  img.height = Math.round(displaySize * 0.75);
+  img.style.cssText = 'vertical-align:middle;margin-right:5px;border-radius:2px;';
+  return img;
+}
+
 // ── Utilidades ────────────────────────────────────────────────────────────────
 
 function pct(v) { return (v * 100).toFixed(1) + '%'; }
@@ -30,6 +60,14 @@ function el(tag, attrs = {}, ...children) {
   return e;
 }
 
+// ── Colores por grupo ─────────────────────────────────────────────────────────
+
+const GROUP_COLORS = {
+  A: '#1d4ed8', B: '#7c3aed', C: '#db2777', D: '#dc2626',
+  E: '#ea580c', F: '#d97706', G: '#65a30d', H: '#16a34a',
+  I: '#0891b2', J: '#0e7490', K: '#6d28d9', L: '#be185d',
+};
+
 // ── Favoritos ─────────────────────────────────────────────────────────────────
 
 function renderFavoritos(favoritos) {
@@ -42,10 +80,11 @@ function renderFavoritos(favoritos) {
     const bar = el('div', { className: 'favorito-bar-track' },
       el('div', { className: 'favorito-bar-fill', style: `width:${barPct}%` })
     );
-    const inner = el('div', { className: 'favorito-inner' },
-      el('span', { className: 'favorito-team' }, f.equipo),
-      bar
-    );
+    const teamSpan = el('span', { className: 'favorito-team' });
+    const flag = flagImg(f.equipo, 20);
+    if (flag) teamSpan.appendChild(flag);
+    teamSpan.appendChild(document.createTextNode(f.equipo));
+    const inner = el('div', { className: 'favorito-inner' }, teamSpan, bar);
     const prob = el('span', { className: 'favorito-prob' }, pct(f.prob_campeon));
     container.appendChild(el('div', { className: 'favorito-row' }, rankEl, inner, prob));
   });
@@ -68,11 +107,41 @@ function renderPartidos(partidos) {
     byDate[day].push(m);
   });
 
+  // ── Barra de filtros ──────────────────────────────────────────────────────
+  const grupos = [...new Set(partidos.filter(m => m.grupo).map(m => m.grupo))].sort();
+  if (grupos.length) {
+    const bar = el('div', { className: 'filtro-bar' });
+
+    const mkBtn = (label, filtro, color) => {
+      const btn = el('button', { className: 'filtro-btn', 'data-filtro': filtro }, label);
+      if (color) btn.style.setProperty('--filtro-color', color);
+      btn.addEventListener('click', () => {
+        bar.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        container.querySelectorAll('.match-card').forEach(c => {
+          c.style.display = (filtro === 'Todos' || c.dataset.group === filtro) ? '' : 'none';
+        });
+        container.querySelectorAll('.jornada-group').forEach(g => {
+          const visible = [...g.querySelectorAll('.match-card')].some(c => c.style.display !== 'none');
+          g.style.display = visible ? '' : 'none';
+        });
+      });
+      return btn;
+    };
+
+    bar.appendChild(mkBtn('Todos', 'Todos', null));
+    grupos.forEach(g => bar.appendChild(mkBtn('Grupo ' + g, g, GROUP_COLORS[g])));
+
+    bar.querySelector('.filtro-btn').classList.add('active'); // "Todos" activo por defecto
+    container.appendChild(bar);
+  }
+
+  // ── Partidos agrupados por fecha ──────────────────────────────────────────
   Object.entries(byDate).sort(([a], [b]) => a.localeCompare(b)).forEach(([day, matches]) => {
     matches.sort((a, b) => a.fecha.localeCompare(b.fecha));
     const group = el('div', { className: 'jornada-group' });
     const sample = matches[0];
-    const label = `${fmtDate(day)} · ${sample.fase}${sample.grupo ? ' – Grupo ' + sample.grupo : ''}`;
+    const label = `${fmtDate(day)} · ${sample.fase}`;
     group.appendChild(el('div', { className: 'jornada-label' }, label));
 
     matches.forEach(m => {
@@ -86,22 +155,42 @@ function renderPartidos(partidos) {
         el('div', { className: 'prob-away', style: `width:${pa}%` }, pa + '%'),
       );
 
-      const header = el('div', { className: 'match-header' },
-        el('span', { className: 'match-teams' }, `${m.local} vs ${m.visitante}`),
-        el('span', { className: 'match-meta' }, (() => {
-          const d = new Date(m.fecha);
-          const local = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
-          const utc   = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
-          return `${local} (${utc} UTC)`;
-        })()),
-      );
+      const teamsSpan = el('span', { className: 'match-teams' });
+      const flagH = flagImg(m.local, 20);
+      const flagA = flagImg(m.visitante, 20);
+      if (flagH) teamsSpan.appendChild(flagH);
+      teamsSpan.appendChild(document.createTextNode(m.local + ' vs '));
+      if (flagA) teamsSpan.appendChild(flagA);
+      teamsSpan.appendChild(document.createTextNode(m.visitante));
+
+      const d = new Date(m.fecha);
+      const localTime = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+      const utcTime   = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+      const matchRight = el('div', { className: 'match-right' });
+      if (m.grupo) {
+        const badge = el('span', { className: 'group-badge' }, 'Grupo ' + m.grupo);
+        badge.style.background = GROUP_COLORS[m.grupo] || 'var(--primary)';
+        matchRight.appendChild(badge);
+      }
+      matchRight.appendChild(el('span', { className: 'match-meta' }, `${localTime} (${utcTime} UTC)`));
+
+      const header = el('div', { className: 'match-header' }, teamsSpan, matchRight);
+
+      const detailTeams = el('span');
+      const fDH = flagImg(m.local, 16); const fDA = flagImg(m.visitante, 16);
+      if (fDH) detailTeams.appendChild(fDH);
+      detailTeams.appendChild(document.createTextNode(m.local + ' · Empate · '));
+      if (fDA) detailTeams.appendChild(fDA);
+      detailTeams.appendChild(document.createTextNode(m.visitante));
 
       const details = el('div', { className: 'match-details' },
-        el('span', {}, `Marcador probable: ${m.marcador_probable || '—'}`),
-        el('span', {}, m.local + ' · Empate · ' + m.visitante),
+        el('span', {}, 'Marcador probable: ', el('span', { className: 'score-badge' }, m.marcador_probable || '—')),
+        detailTeams,
       );
 
-      group.appendChild(el('div', { className: 'match-card' }, header, bar, details));
+      const card = el('div', { className: 'match-card' }, header, bar, details);
+      if (m.grupo) card.dataset.group = m.grupo;
+      group.appendChild(card);
     });
 
     container.appendChild(group);
@@ -163,8 +252,15 @@ function renderTrackRecord(tr) {
     const winnerLabel = { local: p.local, empate: 'Empate', visitante: p.visitante }[p.ganador];
     const winnerCls   = p.acertado ? 'tag-win' : 'tag-loss';
 
+    const matchTd = el('td');
+    const fTH = flagImg(p.local, 16); const fTA = flagImg(p.visitante, 16);
+    if (fTH) matchTd.appendChild(fTH);
+    matchTd.appendChild(document.createTextNode(p.local + ' vs '));
+    if (fTA) matchTd.appendChild(fTA);
+    matchTd.appendChild(document.createTextNode(p.visitante + (p.sorpresa ? ' ⚡' : '')));
+
     const row = el('tr', { className: p.sorpresa ? 'sorpresa' : '' },
-      el('td', {}, `${p.local} vs ${p.visitante}${p.sorpresa ? ' ⚡' : ''}`),
+      matchTd,
       el('td', {}, probStr),
       el('td', { className: winnerCls }, `${winnerLabel}  ${p.resultado}`),
       el('td', {}, p.brier.toFixed(3)),
@@ -309,6 +405,8 @@ Promise.all([
   fetch('./track_record.json').then(r => r.ok ? r.json() : null).catch(() => null),
 ]).then(([predictions, backtest, trackRecord]) => {
 
+  document.getElementById('loading').remove();
+
   // Header timestamps
   if (predictions?.metadata) {
     const m = predictions.metadata;
@@ -328,4 +426,6 @@ Promise.all([
 
 }).catch(err => {
   console.error('Error cargando datos:', err);
+  const l = document.getElementById('loading');
+  if (l) { l.textContent = 'Error cargando los datos. Recarga la página.'; l.style.cssText = 'color:#dc2626'; }
 });

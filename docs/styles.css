@@ -36,6 +36,10 @@ h3 { font-size: .95rem; font-weight: 600; margin: 20px 0 10px; color: var(--mute
 .section-note { font-size: .82rem; color: var(--muted); margin-bottom: 16px; }
 .hidden { display: none; }
 
+.loading-state { text-align: center; padding: 48px 16px; color: var(--muted); font-size: .9rem; }
+.loading-state::after { content: ''; display: inline-block; width: 16px; height: 16px; margin-left: 10px; border: 2px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin .8s linear infinite; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
 footer { text-align: center; padding: 24px 16px; font-size: .78rem; color: var(--muted); }
 
 /* ── Favoritos ────────────────────────────────────────────────────── */
@@ -50,21 +54,40 @@ footer { text-align: center; padding: 24px 16px; font-size: .78rem; color: var(-
 .favorito-team { font-size: .88rem; font-weight: 500; min-width: 130px; }
 .favorito-prob { font-size: .82rem; font-weight: 600; color: var(--primary); text-align: right; }
 
+/* ── Filtro de grupos ─────────────────────────────────────────────── */
+.filtro-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.filtro-btn {
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: 20px;
+  padding: 3px 11px;
+  font-size: .76rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.filtro-btn:hover { border-color: #9ca3af; color: var(--text); }
+.filtro-btn.active { background: var(--filtro-color, var(--primary)); color: #fff; border-color: var(--filtro-color, var(--primary)); }
+
 /* ── Partidos por jornada ─────────────────────────────────────────── */
 .jornada-group { margin-bottom: 20px; }
 .jornada-label { font-size: .75rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
 
 .match-card { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; }
-.match-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.match-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 8px; }
 .match-teams { font-size: .95rem; font-weight: 600; }
-.match-meta { font-size: .75rem; color: var(--muted); }
+.match-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; flex-shrink: 0; }
+.match-meta { font-size: .75rem; color: var(--muted); white-space: nowrap; }
+.group-badge { display: inline-block; background: var(--primary); color: #fff; border-radius: 4px; padding: 1px 7px; font-size: .68rem; font-weight: 600; letter-spacing: .04em; }
 
 .prob-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; font-size: .78rem; font-weight: 600; }
 .prob-home  { background: var(--home);  color: #fff; display: flex; align-items: center; justify-content: center; min-width: 32px; transition: width .3s; }
 .prob-draw  { background: var(--draw);  color: #fff; display: flex; align-items: center; justify-content: center; min-width: 28px; transition: width .3s; }
 .prob-away  { background: var(--away);  color: #fff; display: flex; align-items: center; justify-content: center; min-width: 32px; transition: width .3s; }
 
-.match-details { display: flex; justify-content: space-between; margin-top: 5px; font-size: .72rem; color: var(--muted); }
+.match-details { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: .76rem; color: var(--muted); }
+.score-badge { display: inline-block; background: var(--bg); border: 1px solid var(--border); border-radius: 5px; padding: 1px 8px; font-size: .82rem; font-weight: 700; color: var(--text); letter-spacing: .04em; }
 
 /* ── Métricas ─────────────────────────────────────────────────────── */
 .metricas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
