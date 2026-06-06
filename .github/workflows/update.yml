@@ -48,21 +48,24 @@ jobs:
         run: python src/pipeline.py --n-simulations 10000
 
       - name: Commit and push updated files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Forzar add de ficheros gitignoreados (predictions.json, track_record.json)
-          git add -f docs/predictions.json docs/track_record.json docs/backtest.json
+          # Autenticar el remote con GITHUB_TOKEN explícitamente
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}"
 
-          # track_record.jsonl no está gitignoreado — añadir si existe
+          # Pull primero para evitar conflictos si hubo otro push
+          git pull --rebase origin main
+
+          # Forzar add de ficheros gitignoreados
+          git add -f docs/predictions.json docs/track_record.json docs/backtest.json
           [ -f docs/track_record.jsonl ] && git add docs/track_record.jsonl || true
 
           # Salir limpiamente si no hay cambios
           git diff --staged --quiet && echo "Sin cambios, nada que commitear." && exit 0
-
-          # Pull --rebase por si otro workflow corrió a la vez
-          git pull --rebase origin main
 
           TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           git commit -m "chore: update predictions ${TIMESTAMP} [skip ci]"
