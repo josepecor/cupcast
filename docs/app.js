@@ -148,12 +148,9 @@ function renderPartidos(partidos) {
       const ph  = (m.prob_local * 100).toFixed(0);
       const pd  = (m.prob_empate * 100).toFixed(0);
       const pa  = (m.prob_visitante * 100).toFixed(0);
-
-      const bar = el('div', { className: 'prob-bar' },
-        el('div', { className: 'prob-home', style: `width:${ph}%` }, ph + '%'),
-        el('div', { className: 'prob-draw', style: `width:${pd}%` }, pd + '%'),
-        el('div', { className: 'prob-away', style: `width:${pa}%` }, pa + '%'),
-      );
+      const phe = (m.prob_local_elo * 100).toFixed(0);
+      const pde = (m.prob_empate_elo * 100).toFixed(0);
+      const pae = (m.prob_visitante_elo * 100).toFixed(0);
 
       const teamsSpan = el('span', { className: 'match-teams' });
       const flagH = flagImg(m.local, 20);
@@ -176,6 +173,19 @@ function renderPartidos(partidos) {
 
       const header = el('div', { className: 'match-header' }, teamsSpan, matchRight);
 
+      const labelDC  = el('div', { className: 'prob-label' }, 'Forma reciente');
+      const barDC    = el('div', { className: 'prob-bar' },
+        el('div', { className: 'prob-home', style: `width:${ph}%` }, ph + '%'),
+        el('div', { className: 'prob-draw', style: `width:${pd}%` }, pd + '%'),
+        el('div', { className: 'prob-away', style: `width:${pa}%` }, pa + '%'),
+      );
+      const labelElo = el('div', { className: 'prob-label' }, 'Historial y reputación');
+      const barElo   = el('div', { className: 'prob-bar prob-bar-secondary' },
+        el('div', { className: 'prob-home', style: `width:${phe}%` }, phe + '%'),
+        el('div', { className: 'prob-draw', style: `width:${pde}%` }, pde + '%'),
+        el('div', { className: 'prob-away', style: `width:${pae}%` }, pae + '%'),
+      );
+
       const detailTeams = el('span');
       const fDH = flagImg(m.local, 16); const fDA = flagImg(m.visitante, 16);
       if (fDH) detailTeams.appendChild(fDH);
@@ -188,7 +198,11 @@ function renderPartidos(partidos) {
         detailTeams,
       );
 
-      const card = el('div', { className: 'match-card' }, header, bar, details);
+      const note = el('div', { className: 'match-note', html: buildExplanationText(m) });
+
+      const card = el('div', { className: 'match-card' },
+        header, labelDC, barDC, labelElo, barElo, details, note
+      );
       if (m.grupo) card.dataset.group = m.grupo;
       group.appendChild(card);
     });
@@ -397,6 +411,36 @@ function renderCalibration(buckets, title) {
   return wrap;
 }
 
+// ── Texto explicativo de la predicción ───────────────────────────────────────
+
+function buildExplanationText(m) {
+  const dcHome = m.prob_local, dcAway = m.prob_visitante;
+  const elHome = m.prob_local_elo, elAway = m.prob_visitante_elo;
+
+  const dcFavor  = dcHome > dcAway + 0.04 ? m.local  : dcAway > dcHome + 0.04 ? m.visitante  : null;
+  const eloFavor = elHome > elAway + 0.04 ? m.local  : elAway > elHome + 0.04 ? m.visitante  : null;
+
+  const dcGap  = Math.abs(dcHome - dcAway);
+  const eloGap = Math.abs(elHome - elAway);
+  const divergence = Math.abs(dcHome - elHome) + Math.abs(dcAway - elAway);
+
+  if (dcFavor === eloFavor) {
+    const team = dcFavor;
+    if (!team) return 'Las dos perspectivas ven el partido muy igualado. Cualquier resultado es posible.';
+    if (dcGap > 0.2 && eloGap > 0.2)
+      return `<strong>${team}</strong> es el favorito claro según ambas perspectivas: la forma reciente y el historial apuntan en la misma dirección.`;
+    return `Las dos perspectivas dan ventaja a <strong>${team}</strong>, aunque el partido sigue siendo competido.`;
+  }
+
+  const formTeam = dcFavor  || 'ningún equipo';
+  const histTeam = eloFavor || 'ningún equipo';
+
+  if (divergence > 0.2) {
+    return `Los modelos discrepan: la forma reciente favorece a <strong>${formTeam}</strong>, mientras que el historial da ventaja a <strong>${histTeam}</strong>. Mayor incertidumbre de lo habitual.`;
+  }
+  return `Ligera discrepancia: la forma reciente apunta a <strong>${formTeam}</strong> y el historial a <strong>${histTeam}</strong>.`;
+}
+
 // ── Bootstrap ─────────────────────────────────────────────────────────────────
 
 Promise.all([
@@ -412,9 +456,9 @@ Promise.all([
     const m = predictions.metadata;
     if (m.generado)        document.getElementById('updated').textContent  = 'Actualizado: ' + fmtDatetime(m.generado);
     if (m.entrenado_hasta) document.getElementById('trained').textContent  = `Datos: resultados int. 1872–${m.entrenado_hasta} (~49.000 partidos)`;
-    const faseStr  = m.fase_actual ? `Fase: ${m.fase_actual}` : '';
-    const modelStr = m.modelo      ? ` · Modelo: ${m.modelo}` : '';
-    if (faseStr || modelStr) document.getElementById('data-fase').textContent = faseStr + modelStr;
+    const faseStr = m.fase_actual ? `Fase: ${m.fase_actual}` : '';
+    const modelStr = ' · Modelos: forma reciente + historial';
+    if (faseStr) document.getElementById('data-fase').textContent = faseStr + modelStr;
   }
 
   if (predictions?.favoritos?.length)       renderFavoritos(predictions.favoritos);

@@ -125,6 +125,35 @@ footer { text-align: center; padding: 24px 16px; font-size: .78rem; color: var(-
 
 .global-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
 
+/* ── Etiqueta encima de barra de probabilidades ───────────────────── */
+.prob-label {
+  font-size: .68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+
+/* ── Barra secundaria (historial): igual de altura, ligeramente opaca */
+.prob-bar-secondary .prob-home { opacity: .75; }
+.prob-bar-secondary .prob-draw { opacity: .75; }
+.prob-bar-secondary .prob-away { opacity: .75; }
+
+/* ── Nota explicativa en la tarjeta ──────────────────────────────── */
+.match-note {
+  margin-top: 8px;
+  padding: 7px 10px;
+  background: #f0f4ff;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+  font-size: .73rem;
+  line-height: 1.45;
+  color: #374151;
+}
+.match-note strong { color: var(--primary); font-weight: 600; }
+
 /* ── Responsive ───────────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .header-inner { flex-direction: column; }
