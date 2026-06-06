@@ -60,8 +60,8 @@ jobs:
           # Pull primero para evitar conflictos si hubo otro push
           git pull --rebase origin main
 
-          # Forzar add de ficheros gitignoreados
-          git add -f docs/predictions.json docs/track_record.json docs/backtest.json
+          # Forzar add de ficheros generados por el pipeline diario
+          git add -f docs/predictions.json docs/track_record.json
           [ -f docs/track_record.jsonl ] && git add docs/track_record.jsonl || true
 
           # Salir limpiamente si no hay cambios

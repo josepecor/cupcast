@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "generado": "2026-06-06T10:21:47Z",
+    "modelo": "dixon-coles-v1",
+    "torneos_evaluados": [
+      "World Cup 2010",
+      "World Cup 2014",
+      "World Cup 2018",
+      "World Cup 2022"
+    ]
+  },
+  "por_torneo": [
+    {
+      "torneo": "World Cup 2010",
+      "n_partidos": 64,
+      "log_loss": 0.9326,
+      "brier": 0.5488,
+      "hit_rate": 0.5781,
+      "baseline_log_loss": 0.9885,
+      "baseline_brier": 0.5797,
+      "baseline_hit_rate": 0.5312
+    },
+    {
+      "torneo": "World Cup 2014",
+      "n_partidos": 64,
+      "log_loss": 0.9341,
+      "brier": 0.5541,
+      "hit_rate": 0.5469,
+      "baseline_log_loss": 0.959,
+      "baseline_brier": 0.5629,
+      "baseline_hit_rate": 0.5781
+    },
+    {
+      "torneo": "World Cup 2018",
+      "n_partidos": 64,
+      "log_loss": 0.9775,
+      "brier": 0.5786,
+      "hit_rate": 0.5469,
+      "baseline_log_loss": 0.9972,
+      "baseline_brier": 0.5892,
+      "baseline_hit_rate": 0.5312
+    },
+    {
+      "torneo": "World Cup 2022",
+      "n_partidos": 64,
+      "log_loss": 1.0778,
+      "brier": 0.6224,
+      "hit_rate": 0.4688,
+      "baseline_log_loss": 1.031,
+      "baseline_brier": 0.612,
+      "baseline_hit_rate": 0.5625
+    }
+  ],
+  "global": {
+    "n_partidos": 256,
+    "log_loss": 0.9805,
+    "brier": 0.576,
+    "hit_rate": 0.5352,
+    "baseline_log_loss": 0.9939,
+    "baseline_brier": 0.5859,
+    "baseline_hit_rate": 0.5508
+  },
+  "calibracion": [
+    {
+      "bucket": "0.0-0.1",
+      "predicho": 0.066,
+      "observado": 0.113,
+      "n": 53
+    },
+    {
+      "bucket": "0.1-0.2",
+      "predicho": 0.159,
+      "observado": 0.146,
+      "n": 123
+    },
+    {
+      "bucket": "0.2-0.3",
+      "predicho": 0.258,
+      "observado": 0.254,
+      "n": 205
+    },
+    {
+      "bucket": "0.3-0.4",
+      "predicho": 0.343,
+      "observado": 0.306,
+      "n": 180
+    },
+    {
+      "bucket": "0.4-0.5",
+      "predicho": 0.445,
+      "observado": 0.529,
+      "n": 70
+    },
+    {
+      "bucket": "0.5-0.6",
+      "predicho": 0.541,
+      "observado": 0.607,
+      "n": 61
+    },
+    {
+      "bucket": "0.6-0.7",
+      "predicho": 0.645,
+      "observado": 0.583,
+      "n": 36
+    },
+    {
+      "bucket": "0.7-0.8",
+      "predicho": 0.747,
+      "observado": 0.759,
+      "n": 29
+    },
+    {
+      "bucket": "0.8-0.9",
+      "predicho": 0.826,
+      "observado": 0.778,
+      "n": 9
+    },
+    {
+      "bucket": "0.9-1.0",
+      "predicho": 0.915,
+      "observado": 0.5,
+      "n": 2
+    }
+  ]
+}
