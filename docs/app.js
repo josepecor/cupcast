@@ -14,7 +14,7 @@ function fmtDate(iso) {
 
 function fmtDatetime(iso) {
   const d = new Date(iso);
-  return d.toLocaleString('es-ES', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + ' UTC';
+  return d.toLocaleString('es-ES', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
 }
 
 function el(tag, attrs = {}, ...children) {
@@ -66,7 +66,8 @@ function renderPartidos(partidos) {
     byDate[day].push(m);
   });
 
-  Object.entries(byDate).forEach(([day, matches]) => {
+  Object.entries(byDate).sort(([a], [b]) => a.localeCompare(b)).forEach(([day, matches]) => {
+    matches.sort((a, b) => a.fecha.localeCompare(b.fecha));
     const group = el('div', { className: 'jornada-group' });
     const sample = matches[0];
     const label = `${fmtDate(day)} · ${sample.fase}${sample.grupo ? ' – Grupo ' + sample.grupo : ''}`;
@@ -85,7 +86,12 @@ function renderPartidos(partidos) {
 
       const header = el('div', { className: 'match-header' },
         el('span', { className: 'match-teams' }, `${m.local} vs ${m.visitante}`),
-        el('span', { className: 'match-meta' }, new Date(m.fecha).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) + ' UTC'),
+        el('span', { className: 'match-meta' }, (() => {
+          const d = new Date(m.fecha);
+          const local = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+          const utc   = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+          return `${local} (${utc} UTC)`;
+        })()),
       );
 
       const details = el('div', { className: 'match-details' },
