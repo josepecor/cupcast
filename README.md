@@ -9,14 +9,19 @@ Genera probabilidades de victoria partido a partido, simula el cuadro completo p
 
 ## Cómo funciona
 
-### Modelo principal — Dixon-Coles
+### Modelo principal — Dixon-Coles ("Forma reciente")
 Poisson bivariada con corrección para resultados bajos (0-0, 1-0, 0-1, 1-1) y **decaimiento temporal** (ξ = 0.003, half-life ~8 meses). Entrena con los ~49.000 partidos internacionales del dataset `martj42/international_results` (1872–hoy), ponderando más los recientes. Estima fuerza de ataque y defensa por selección y ventaja de local.
 
-### Baseline — Elo
-Ratings Elo adaptados al fútbol (K escalado por torneo y diferencia de goles). Sirve como referencia para saber si Dixon-Coles aporta valor real.
+Cada partido se pondera adicionalmente por la calidad del rival: `(elo_medio_partido / elo_medio_global)^0.5`. Así un resultado contra Argentina cuenta más que uno contra un equipo débil, sin depender de categorías arbitrarias de torneo.
+
+### Baseline — Elo ("Historial y reputación")
+Ratings Elo adaptados al fútbol (K escalado por torneo y diferencia de goles). Captura el historial acumulado de cada selección a lo largo de los años. Sirve como segunda perspectiva en la UI y como referencia para evaluar si Dixon-Coles aporta valor añadido.
 
 ### Simulación — Monte Carlo
 10.000 simulaciones del cuadro completo respetando el formato 2026 (12 grupos × 4 → R32 → octavos → ...). Resultado: probabilidad de campeón y de alcanzar cada ronda para los 48 equipos.
+
+### UI — dos perspectivas por partido
+Cada tarjeta de partido muestra las dos predicciones en paralelo con sus barras de probabilidad (local / empate / visitante) y una nota generada automáticamente que explica si los modelos coinciden o discrepan, en lenguaje no técnico.
 
 ### Track record honesto
 Antes de cada partido se congela la predicción. Al conocerse el resultado se puntúa con **log-loss** y **Brier score** y se archiva. La predicción congelada nunca se recalcula.
