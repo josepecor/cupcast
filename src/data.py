@@ -34,6 +34,10 @@ _TEAM_NAME_MAP: dict[str, str] = {
     "Czech Republic": "Czechia",
     "Macedonia": "North Macedonia",
     "Swaziland": "Eswatini",
+    "Türkiye": "Turkey",
+    "Bosnia-Herzegovina": "Bosnia and Herzegovina",
+    "Congo DR": "DR Congo",
+    "Curacao": "Curaçao",
 }
 
 

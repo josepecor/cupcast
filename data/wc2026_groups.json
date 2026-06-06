@@ -1,18 +1,78 @@
 {
   "tournament": "FIFA World Cup 2026",
-  "note": "Grupos provisionales — actualizar con el sorteo oficial de la FIFA",
+  "note": "Grupos oficiales según sorteo FIFA (fuente: ESPN/FIFA)",
   "groups": {
-    "A": ["USA", "Mexico", "Canada", "Uruguay"],
-    "B": ["Argentina", "Chile", "Ecuador", "New Zealand"],
-    "C": ["Brazil", "Colombia", "Bolivia", "Cameroon"],
-    "D": ["France", "Belgium", "Morocco", "Qatar"],
-    "E": ["Spain", "Portugal", "Senegal", "Panama"],
-    "F": ["Germany", "Netherlands", "Australia", "Tunisia"],
-    "G": ["England", "Croatia", "Iran", "Costa Rica"],
-    "H": ["Japan", "South Korea", "Saudi Arabia", "Jamaica"],
-    "I": ["Italy", "Switzerland", "Nigeria", "Albania"],
-    "J": ["Serbia", "Hungary", "Peru", "Venezuela"],
-    "K": ["Turkey", "Czech Republic", "Paraguay", "DR Congo"],
-    "L": ["Ukraine", "Poland", "Egypt", "Guatemala"]
+    "A": [
+      "Mexico",
+      "South Africa",
+      "South Korea",
+      "Czechia"
+    ],
+    "B": [
+      "Canada",
+      "Bosnia and Herzegovina",
+      "Qatar",
+      "Switzerland"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Haiti",
+      "Scotland"
+    ],
+    "D": [
+      "USA",
+      "Paraguay",
+      "Australia",
+      "Turkey"
+    ],
+    "E": [
+      "Germany",
+      "Curaçao",
+      "Côte d'Ivoire",
+      "Ecuador"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Egypt",
+      "Iran",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Cape Verde",
+      "Saudi Arabia",
+      "Uruguay"
+    ],
+    "I": [
+      "France",
+      "Senegal",
+      "Iraq",
+      "Norway"
+    ],
+    "J": [
+      "Argentina",
+      "Algeria",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Portugal",
+      "DR Congo",
+      "Uzbekistan",
+      "Colombia"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Ghana",
+      "Panama"
+    ]
   }
 }
