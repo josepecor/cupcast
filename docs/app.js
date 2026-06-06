@@ -14,7 +14,9 @@ function fmtDate(iso) {
 
 function fmtDatetime(iso) {
   const d = new Date(iso);
-  return d.toLocaleString('es-ES', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+  const local = d.toLocaleString('es-ES', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+  const utcTime = d.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
+  return `${local} (${utcTime} UTC)`;
 }
 
 function el(tag, attrs = {}, ...children) {
@@ -310,8 +312,11 @@ Promise.all([
   // Header timestamps
   if (predictions?.metadata) {
     const m = predictions.metadata;
-    if (m.generado)        document.getElementById('updated').textContent = 'Actualizado: ' + fmtDatetime(m.generado);
-    if (m.entrenado_hasta) document.getElementById('trained').textContent  = 'Datos hasta: ' + m.entrenado_hasta;
+    if (m.generado)        document.getElementById('updated').textContent  = 'Actualizado: ' + fmtDatetime(m.generado);
+    if (m.entrenado_hasta) document.getElementById('trained').textContent  = `Datos: resultados int. 1872–${m.entrenado_hasta} (~49.000 partidos)`;
+    const faseStr  = m.fase_actual ? `Fase: ${m.fase_actual}` : '';
+    const modelStr = m.modelo      ? ` · Modelo: ${m.modelo}` : '';
+    if (faseStr || modelStr) document.getElementById('data-fase').textContent = faseStr + modelStr;
   }
 
   if (predictions?.favoritos?.length)       renderFavoritos(predictions.favoritos);
