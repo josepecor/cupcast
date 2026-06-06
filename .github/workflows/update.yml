@@ -1,0 +1,67 @@
+name: Update predictions
+
+# Ejecuta el pipeline diario y despliega GitHub Pages.
+#
+# Frecuencia:
+#   - Base: 6:00 y 23:00 UTC todos los días
+#   - Cada 3 horas durante el Mundial (Jun 11 – Jul 22) para no perder
+#     resultados de la tarde europea / noche americana
+#
+# Nota: los crons de Actions son best-effort (+/- 30 min habitual) y se
+# desactivan solos si el repo no tiene actividad ~60 días. El guard de
+# completitud en pipeline.py protege contra ejecuciones desfasadas.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'           # diario 6:00 UTC
+    - cron: '0 23 * * *'          # diario 23:00 UTC (post-resultados)
+    - cron: '0 */3 * 6-7 *'       # cada 3h en junio-julio (torneo)
+  workflow_dispatch:               # disparo manual desde la UI de Actions
+
+permissions:
+  contents: write   # para hacer push de los JSONs actualizados
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # fetch completo para poder hacer push
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python src/pipeline.py --n-simulations 10000
+
+      - name: Commit and push updated files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Forzar add de ficheros gitignoreados (predictions.json, track_record.json)
+          git add -f docs/predictions.json docs/track_record.json docs/backtest.json
+
+          # track_record.jsonl no está gitignoreado — añadir si existe
+          [ -f docs/track_record.jsonl ] && git add docs/track_record.jsonl || true
+
+          # Salir limpiamente si no hay cambios
+          git diff --staged --quiet && echo "Sin cambios, nada que commitear." && exit 0
+
+          # Pull --rebase por si otro workflow corrió a la vez
+          git pull --rebase origin main
+
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          git commit -m "chore: update predictions ${TIMESTAMP} [skip ci]"
+          git push origin main

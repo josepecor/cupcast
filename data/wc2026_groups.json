@@ -1,0 +1,18 @@
+{
+  "tournament": "FIFA World Cup 2026",
+  "note": "Grupos provisionales — actualizar con el sorteo oficial de la FIFA",
+  "groups": {
+    "A": ["USA", "Mexico", "Canada", "Uruguay"],
+    "B": ["Argentina", "Chile", "Ecuador", "New Zealand"],
+    "C": ["Brazil", "Colombia", "Bolivia", "Cameroon"],
+    "D": ["France", "Belgium", "Morocco", "Qatar"],
+    "E": ["Spain", "Portugal", "Senegal", "Panama"],
+    "F": ["Germany", "Netherlands", "Australia", "Tunisia"],
+    "G": ["England", "Croatia", "Iran", "Costa Rica"],
+    "H": ["Japan", "South Korea", "Saudi Arabia", "Jamaica"],
+    "I": ["Italy", "Switzerland", "Nigeria", "Albania"],
+    "J": ["Serbia", "Hungary", "Peru", "Venezuela"],
+    "K": ["Turkey", "Czech Republic", "Paraguay", "DR Congo"],
+    "L": ["Ukraine", "Poland", "Egypt", "Guatemala"]
+  }
+}

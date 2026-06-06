@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CupCast — Mundial 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1>CupCast</h1>
+        <p class="subtitle">Predicciones probabilísticas · Mundial 2026</p>
+      </div>
+      <div class="header-meta">
+        <span id="updated" class="meta-tag"></span>
+        <span id="trained" class="meta-tag"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── Favoritos ──────────────────────────────────────────────── -->
+    <section id="sec-favoritos">
+      <h2>Favoritos al título</h2>
+      <div id="favoritos-grid"></div>
+    </section>
+
+    <!-- ── Próximos partidos ──────────────────────────────────────── -->
+    <section id="sec-partidos">
+      <h2>Próximos partidos</h2>
+      <p class="section-note">Probabilidades Dixon-Coles · todos en sede neutral</p>
+      <div id="partidos-container"></div>
+    </section>
+
+    <!-- ── Track record (oculto hasta que haya resultados) ────────── -->
+    <section id="sec-track" class="hidden">
+      <h2>Track record en vivo</h2>
+      <p class="section-note">Predicciones congeladas antes del partido, puntuadas al resolverse</p>
+      <div id="track-metricas" class="metricas-grid"></div>
+      <div id="track-calibracion"></div>
+      <h3 id="track-partidos-title">Partidos resueltos</h3>
+      <div id="track-tabla"></div>
+    </section>
+
+    <!-- ── Backtest histórico ─────────────────────────────────────── -->
+    <section id="sec-backtest">
+      <h2>Validación histórica</h2>
+      <p class="section-note">
+        Dixon-Coles entrenado con datos pre-torneo, evaluado sobre cada Mundial.
+        Baseline: Elo adaptado al fútbol.
+      </p>
+      <div id="backtest-tabla"></div>
+      <div id="backtest-global"></div>
+      <div id="backtest-calibracion"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Modelo Dixon-Coles con decaimiento temporal · Baseline Elo · Datos: <a href="https://github.com/martj42/international_results" target="_blank">martj42/international_results</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

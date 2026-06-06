@@ -1,0 +1,114 @@
+/* ── Variables ────────────────────────────────────────────────────── */
+:root {
+  --bg:        #f4f5f7;
+  --surface:   #ffffff;
+  --border:    #e2e5ea;
+  --text:      #1a1d23;
+  --muted:     #6b7280;
+  --primary:   #1d4ed8;
+  --home:      #16a34a;
+  --draw:      #9ca3af;
+  --away:      #dc2626;
+  --gold:      #d97706;
+  --surprise:  #fef3c7;
+  --surprise-border: #f59e0b;
+  --radius:    10px;
+  --shadow:    0 1px 4px rgba(0,0,0,.08);
+}
+
+/* ── Reset ────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.5; }
+a { color: var(--primary); }
+
+/* ── Layout ───────────────────────────────────────────────────────── */
+header { background: var(--primary); color: #fff; padding: 20px 24px; }
+.header-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -.5px; }
+.subtitle { opacity: .85; font-size: .9rem; margin-top: 2px; }
+.header-meta { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; }
+.meta-tag { font-size: .78rem; opacity: .8; }
+
+main { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; display: flex; flex-direction: column; gap: 32px; }
+section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+h3 { font-size: .95rem; font-weight: 600; margin: 20px 0 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-size: .78rem; }
+.section-note { font-size: .82rem; color: var(--muted); margin-bottom: 16px; }
+.hidden { display: none; }
+
+footer { text-align: center; padding: 24px 16px; font-size: .78rem; color: var(--muted); }
+
+/* ── Favoritos ────────────────────────────────────────────────────── */
+#favoritos-grid { display: flex; flex-direction: column; gap: 6px; }
+
+.favorito-row { display: grid; grid-template-columns: 28px 1fr 56px; align-items: center; gap: 10px; }
+.favorito-rank { font-size: .75rem; color: var(--muted); text-align: right; }
+.favorito-rank.top3 { color: var(--gold); font-weight: 700; }
+.favorito-inner { display: flex; align-items: center; gap: 8px; }
+.favorito-bar-track { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.favorito-bar-fill { height: 100%; background: var(--primary); border-radius: 4px; transition: width .4s ease; }
+.favorito-team { font-size: .88rem; font-weight: 500; min-width: 130px; }
+.favorito-prob { font-size: .82rem; font-weight: 600; color: var(--primary); text-align: right; }
+
+/* ── Partidos por jornada ─────────────────────────────────────────── */
+.jornada-group { margin-bottom: 20px; }
+.jornada-label { font-size: .75rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+
+.match-card { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; }
+.match-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.match-teams { font-size: .95rem; font-weight: 600; }
+.match-meta { font-size: .75rem; color: var(--muted); }
+
+.prob-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; font-size: .78rem; font-weight: 600; }
+.prob-home  { background: var(--home);  color: #fff; display: flex; align-items: center; justify-content: center; min-width: 32px; transition: width .3s; }
+.prob-draw  { background: var(--draw);  color: #fff; display: flex; align-items: center; justify-content: center; min-width: 28px; transition: width .3s; }
+.prob-away  { background: var(--away);  color: #fff; display: flex; align-items: center; justify-content: center; min-width: 32px; transition: width .3s; }
+
+.match-details { display: flex; justify-content: space-between; margin-top: 5px; font-size: .72rem; color: var(--muted); }
+
+/* ── Métricas ─────────────────────────────────────────────────────── */
+.metricas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.metrica-card { background: var(--bg); border-radius: 8px; padding: 12px 14px; }
+.metrica-label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.metrica-val { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-top: 2px; }
+.metrica-sub { font-size: .72rem; color: var(--muted); margin-top: 1px; }
+.metrica-better { color: var(--home); }
+.metrica-worse  { color: var(--away); }
+
+/* ── Calibración ──────────────────────────────────────────────────── */
+.calib-wrap { margin-bottom: 16px; }
+.calib-title { font-size: .78rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+.calib-svg { display: block; width: 100%; max-width: 300px; }
+
+/* ── Track record tabla ───────────────────────────────────────────── */
+.track-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.track-table th { text-align: left; padding: 6px 8px; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; border-bottom: 2px solid var(--border); }
+.track-table td { padding: 8px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.track-table tr:last-child td { border-bottom: none; }
+.track-table tr.sorpresa { background: var(--surprise); }
+.track-table tr.sorpresa td:first-child { border-left: 3px solid var(--surprise-border); }
+.tag-win  { color: var(--home); font-weight: 600; }
+.tag-loss { color: var(--away); }
+.tag-draw { color: var(--muted); }
+
+/* ── Backtest tabla ───────────────────────────────────────────────── */
+.backtest-table { width: 100%; border-collapse: collapse; font-size: .85rem; margin-bottom: 20px; }
+.backtest-table th { padding: 8px 10px; text-align: right; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; border-bottom: 2px solid var(--border); }
+.backtest-table th:first-child { text-align: left; }
+.backtest-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: right; }
+.backtest-table td:first-child { text-align: left; font-weight: 500; }
+.backtest-table tr.global-row td { font-weight: 700; border-top: 2px solid var(--border); background: var(--bg); }
+.cell-better { color: var(--home); font-weight: 600; }
+
+.global-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; }
+  .header-meta { align-items: flex-start; }
+  .match-teams { font-size: .88rem; }
+  .prob-home, .prob-draw, .prob-away { font-size: .7rem; }
+  .favorito-team { min-width: 100px; }
+  .backtest-table { font-size: .78rem; }
+  .backtest-table th, .backtest-table td { padding: 6px 6px; }
+}

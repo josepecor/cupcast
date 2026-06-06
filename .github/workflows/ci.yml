@@ -1,0 +1,55 @@
+name: CI
+
+# Corre en cada push a main y en PRs.
+# Objetivo: verificar que tests pasan y que el backtest es reproducible.
+# NO despliega Pages — eso lo hace update.yml.
+
+on:
+  push:
+    branches: [main]
+    # Ignorar commits del bot de update.yml (contienen [skip ci])
+    # GitHub ya respeta [skip ci] de forma nativa, pero lo dejamos explícito
+    paths-ignore:
+      - 'docs/predictions.json'
+      - 'docs/track_record.json'
+      - 'docs/track_record.jsonl'
+      - 'docs/backtest.json'
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint (ruff)
+        run: ruff check src/ tests/
+
+      - name: Run tests
+        run: pytest tests/ -v --tb=short
+
+      - name: Regenerate backtest (reproducibilidad)
+        run: python src/pipeline.py --backtest-only
+
+      - name: Upload backtest.json
+        uses: actions/upload-artifact@v4
+        with:
+          name: backtest-${{ github.sha }}
+          path: docs/backtest.json
+          retention-days: 30
