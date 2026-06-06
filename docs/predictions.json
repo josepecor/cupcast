@@ -1,7 +1,7 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "generado": "2026-06-06T12:51:44Z",
+    "generado": "2026-06-06T15:32:07Z",
     "entrenado_hasta": "2026-06-06",
     "fase_actual": "grupos",
     "modelo": "dixon-coles-v1"
@@ -9,95 +9,99 @@
   "favoritos": [
     {
       "equipo": "Argentina",
-      "prob_campeon": 0.1715
+      "prob_campeon": 0.1752
     },
     {
       "equipo": "Spain",
-      "prob_campeon": 0.1278
+      "prob_campeon": 0.1272
     },
     {
       "equipo": "Morocco",
-      "prob_campeon": 0.1009
+      "prob_campeon": 0.0964
     },
     {
       "equipo": "Japan",
-      "prob_campeon": 0.0784
-    },
-    {
-      "equipo": "England",
-      "prob_campeon": 0.0592
-    },
-    {
-      "equipo": "Portugal",
-      "prob_campeon": 0.0534
+      "prob_campeon": 0.0754
     },
     {
       "equipo": "Brazil",
-      "prob_campeon": 0.0516
+      "prob_campeon": 0.0596
+    },
+    {
+      "equipo": "England",
+      "prob_campeon": 0.0584
+    },
+    {
+      "equipo": "Portugal",
+      "prob_campeon": 0.0535
     },
     {
       "equipo": "Switzerland",
-      "prob_campeon": 0.0485
+      "prob_campeon": 0.0437
     },
     {
       "equipo": "Germany",
-      "prob_campeon": 0.0398
+      "prob_campeon": 0.0424
     },
     {
       "equipo": "Norway",
-      "prob_campeon": 0.0363
-    },
-    {
-      "equipo": "Ecuador",
-      "prob_campeon": 0.0333
+      "prob_campeon": 0.0376
     },
     {
       "equipo": "Netherlands",
-      "prob_campeon": 0.0307
+      "prob_campeon": 0.0325
+    },
+    {
+      "equipo": "Ecuador",
+      "prob_campeon": 0.0318
     },
     {
       "equipo": "France",
-      "prob_campeon": 0.0301
-    },
-    {
-      "equipo": "Austria",
-      "prob_campeon": 0.0183
+      "prob_campeon": 0.029
     },
     {
       "equipo": "Colombia",
-      "prob_campeon": 0.0179
+      "prob_campeon": 0.018
     },
     {
-      "equipo": "Algeria",
-      "prob_campeon": 0.0166
+      "equipo": "Austria",
+      "prob_campeon": 0.0176
     },
     {
       "equipo": "Mexico",
-      "prob_campeon": 0.0161
+      "prob_campeon": 0.0172
     },
     {
       "equipo": "Belgium",
-      "prob_campeon": 0.0143
+      "prob_campeon": 0.0157
+    },
+    {
+      "equipo": "Algeria",
+      "prob_campeon": 0.0137
     },
     {
       "equipo": "Paraguay",
-      "prob_campeon": 0.0076
-    },
-    {
-      "equipo": "Senegal",
-      "prob_campeon": 0.007
-    },
-    {
-      "equipo": "Canada",
-      "prob_campeon": 0.0064
+      "prob_campeon": 0.0075
     },
     {
       "equipo": "Turkey",
-      "prob_campeon": 0.0061
+      "prob_campeon": 0.0069
+    },
+    {
+      "equipo": "Senegal",
+      "prob_campeon": 0.0067
+    },
+    {
+      "equipo": "Canada",
+      "prob_campeon": 0.0066
     },
     {
       "equipo": "Uruguay",
-      "prob_campeon": 0.0056
+      "prob_campeon": 0.0054
+    },
+    {
+      "equipo": "Côte d'Ivoire",
+      "prob_campeon": 0.005
     },
     {
       "equipo": "Croatia",
@@ -105,50 +109,46 @@
     },
     {
       "equipo": "Iran",
-      "prob_campeon": 0.0049
-    },
-    {
-      "equipo": "Côte d'Ivoire",
-      "prob_campeon": 0.0047
-    },
-    {
-      "equipo": "DR Congo",
-      "prob_campeon": 0.0024
+      "prob_campeon": 0.0039
     },
     {
       "equipo": "Egypt",
-      "prob_campeon": 0.0017
+      "prob_campeon": 0.002
     },
     {
       "equipo": "Australia",
-      "prob_campeon": 0.0011
+      "prob_campeon": 0.0016
+    },
+    {
+      "equipo": "DR Congo",
+      "prob_campeon": 0.0016
     },
     {
       "equipo": "Scotland",
-      "prob_campeon": 0.0008
-    },
-    {
-      "equipo": "Sweden",
-      "prob_campeon": 0.0007
-    },
-    {
-      "equipo": "South Korea",
-      "prob_campeon": 0.0006
-    },
-    {
-      "equipo": "USA",
-      "prob_campeon": 0.0003
+      "prob_campeon": 0.0011
     },
     {
       "equipo": "Tunisia",
-      "prob_campeon": 0.0002
+      "prob_campeon": 0.0006
     },
     {
-      "equipo": "Iraq",
-      "prob_campeon": 0.0001
+      "equipo": "Sweden",
+      "prob_campeon": 0.0005
+    },
+    {
+      "equipo": "South Korea",
+      "prob_campeon": 0.0003
     },
     {
       "equipo": "Uzbekistan",
+      "prob_campeon": 0.0002
+    },
+    {
+      "equipo": "USA",
+      "prob_campeon": 0.0001
+    },
+    {
+      "equipo": "Iraq",
       "prob_campeon": 0.0001
     }
   ],
@@ -164,7 +164,7 @@
       "prob_empate": 0.2607,
       "prob_visitante": 0.1014,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7934,
       "prob_empate_elo": 0.0781,
       "prob_visitante_elo": 0.1285
@@ -180,7 +180,7 @@
       "prob_empate": 0.2931,
       "prob_visitante": 0.3322,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4792,
       "prob_empate_elo": 0.2172,
       "prob_visitante_elo": 0.3036
@@ -196,7 +196,7 @@
       "prob_empate": 0.3384,
       "prob_visitante": 0.1741,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7184,
       "prob_empate_elo": 0.1087,
       "prob_visitante_elo": 0.1729
@@ -212,7 +212,7 @@
       "prob_empate": 0.2781,
       "prob_visitante": 0.5121,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.327,
       "prob_empate_elo": 0.2414,
       "prob_visitante_elo": 0.4316
@@ -228,7 +228,7 @@
       "prob_empate": 0.0621,
       "prob_visitante": 0.9206,
       "marcador_probable": "0-3",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1119,
       "prob_empate_elo": 0.0672,
       "prob_visitante_elo": 0.8208
@@ -244,7 +244,7 @@
       "prob_empate": 0.3518,
       "prob_visitante": 0.3781,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4826,
       "prob_empate_elo": 0.2155,
       "prob_visitante_elo": 0.3019
@@ -260,7 +260,7 @@
       "prob_empate": 0.2367,
       "prob_visitante": 0.6072,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2892,
       "prob_empate_elo": 0.2032,
       "prob_visitante_elo": 0.5076
@@ -276,7 +276,7 @@
       "prob_empate": 0.3112,
       "prob_visitante": 0.4285,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3365,
       "prob_empate_elo": 0.2519,
       "prob_visitante_elo": 0.4117
@@ -292,7 +292,7 @@
       "prob_empate": 0.0253,
       "prob_visitante": 0.0056,
       "marcador_probable": "4-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.8457,
       "prob_empate_elo": 0.0575,
       "prob_visitante_elo": 0.0968
@@ -308,7 +308,7 @@
       "prob_empate": 0.3541,
       "prob_visitante": 0.3862,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3884,
       "prob_empate_elo": 0.2643,
       "prob_visitante_elo": 0.3473
@@ -324,7 +324,7 @@
       "prob_empate": 0.4491,
       "prob_visitante": 0.357,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2104,
       "prob_empate_elo": 0.1365,
       "prob_visitante_elo": 0.6531
@@ -340,7 +340,7 @@
       "prob_empate": 0.3016,
       "prob_visitante": 0.3179,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3655,
       "prob_empate_elo": 0.2769,
       "prob_visitante_elo": 0.3576
@@ -356,7 +356,7 @@
       "prob_empate": 0.1502,
       "prob_visitante": 0.057,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.9303,
       "prob_empate_elo": 0.0254,
       "prob_visitante_elo": 0.0442
@@ -372,7 +372,7 @@
       "prob_empate": 0.3409,
       "prob_visitante": 0.215,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.5638,
       "prob_empate_elo": 0.1766,
       "prob_visitante_elo": 0.2596
@@ -388,7 +388,7 @@
       "prob_empate": 0.3222,
       "prob_visitante": 0.5506,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1548,
       "prob_empate_elo": 0.0959,
       "prob_visitante_elo": 0.7493
@@ -404,7 +404,7 @@
       "prob_empate": 0.2298,
       "prob_visitante": 0.091,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.5955,
       "prob_empate_elo": 0.162,
       "prob_visitante_elo": 0.2424
@@ -420,7 +420,7 @@
       "prob_empate": 0.2763,
       "prob_visitante": 0.2548,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.6692,
       "prob_empate_elo": 0.1295,
       "prob_visitante_elo": 0.2013
@@ -436,7 +436,7 @@
       "prob_empate": 0.2546,
       "prob_visitante": 0.6519,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2067,
       "prob_empate_elo": 0.1336,
       "prob_visitante_elo": 0.6597
@@ -452,7 +452,7 @@
       "prob_empate": 0.3583,
       "prob_visitante": 0.1665,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7712,
       "prob_empate_elo": 0.087,
       "prob_visitante_elo": 0.1418
@@ -468,7 +468,7 @@
       "prob_empate": 0.2143,
       "prob_visitante": 0.1115,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4876,
       "prob_empate_elo": 0.2131,
       "prob_visitante_elo": 0.2994
@@ -484,7 +484,7 @@
       "prob_empate": 0.3756,
       "prob_visitante": 0.162,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7801,
       "prob_empate_elo": 0.0834,
       "prob_visitante_elo": 0.1365
@@ -500,7 +500,7 @@
       "prob_empate": 0.3162,
       "prob_visitante": 0.2001,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.5162,
       "prob_empate_elo": 0.1991,
       "prob_visitante_elo": 0.2847
@@ -516,7 +516,7 @@
       "prob_empate": 0.3035,
       "prob_visitante": 0.2936,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1905,
       "prob_empate_elo": 0.1214,
       "prob_visitante_elo": 0.688
@@ -532,7 +532,7 @@
       "prob_empate": 0.2578,
       "prob_visitante": 0.6089,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1958,
       "prob_empate_elo": 0.1253,
       "prob_visitante_elo": 0.6789
@@ -548,7 +548,7 @@
       "prob_empate": 0.2777,
       "prob_visitante": 0.2099,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.5664,
       "prob_empate_elo": 0.1754,
       "prob_visitante_elo": 0.2582
@@ -564,7 +564,7 @@
       "prob_empate": 0.21,
       "prob_visitante": 0.1004,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.767,
       "prob_empate_elo": 0.0887,
       "prob_visitante_elo": 0.1443
@@ -580,7 +580,7 @@
       "prob_empate": 0.1826,
       "prob_visitante": 0.0567,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7806,
       "prob_empate_elo": 0.0832,
       "prob_visitante_elo": 0.1362
@@ -596,7 +596,7 @@
       "prob_empate": 0.3219,
       "prob_visitante": 0.197,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.5118,
       "prob_empate_elo": 0.2012,
       "prob_visitante_elo": 0.287
@@ -612,7 +612,7 @@
       "prob_empate": 0.296,
       "prob_visitante": 0.4253,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3185,
       "prob_empate_elo": 0.2324,
       "prob_visitante_elo": 0.4491
@@ -628,7 +628,7 @@
       "prob_empate": 0.3222,
       "prob_visitante": 0.5538,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2443,
       "prob_empate_elo": 0.1636,
       "prob_visitante_elo": 0.5921
@@ -644,7 +644,7 @@
       "prob_empate": 0.0938,
       "prob_visitante": 0.0386,
       "marcador_probable": "3-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.8093,
       "prob_empate_elo": 0.0718,
       "prob_visitante_elo": 0.119
@@ -660,7 +660,7 @@
       "prob_empate": 0.3203,
       "prob_visitante": 0.332,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.429,
       "prob_empate_elo": 0.2427,
       "prob_visitante_elo": 0.3282
@@ -676,7 +676,7 @@
       "prob_empate": 0.1882,
       "prob_visitante": 0.1374,
       "marcador_probable": "2-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.6944,
       "prob_empate_elo": 0.1187,
       "prob_visitante_elo": 0.1869
@@ -692,7 +692,7 @@
       "prob_empate": 0.2992,
       "prob_visitante": 0.2114,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.636,
       "prob_empate_elo": 0.1439,
       "prob_visitante_elo": 0.22
@@ -708,7 +708,7 @@
       "prob_empate": 0.1256,
       "prob_visitante": 0.0203,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.8549,
       "prob_empate_elo": 0.054,
       "prob_visitante_elo": 0.0912
@@ -724,7 +724,7 @@
       "prob_empate": 0.3316,
       "prob_visitante": 0.5671,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1985,
       "prob_empate_elo": 0.1274,
       "prob_visitante_elo": 0.6741
@@ -740,7 +740,7 @@
       "prob_empate": 0.1241,
       "prob_visitante": 0.0368,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.922,
       "prob_empate_elo": 0.0285,
       "prob_visitante_elo": 0.0495
@@ -756,7 +756,7 @@
       "prob_empate": 0.2967,
       "prob_visitante": 0.2764,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4052,
       "prob_empate_elo": 0.2553,
       "prob_visitante_elo": 0.3395
@@ -772,7 +772,7 @@
       "prob_empate": 0.3366,
       "prob_visitante": 0.1713,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7719,
       "prob_empate_elo": 0.0867,
       "prob_visitante_elo": 0.1414
@@ -788,7 +788,7 @@
       "prob_empate": 0.3289,
       "prob_visitante": 0.5483,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3241,
       "prob_empate_elo": 0.2383,
       "prob_visitante_elo": 0.4377
@@ -804,7 +804,7 @@
       "prob_empate": 0.3688,
       "prob_visitante": 0.1694,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7713,
       "prob_empate_elo": 0.0869,
       "prob_visitante_elo": 0.1417
@@ -820,7 +820,7 @@
       "prob_empate": 0.2567,
       "prob_visitante": 0.0983,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.8442,
       "prob_empate_elo": 0.0581,
       "prob_visitante_elo": 0.0977
@@ -836,7 +836,7 @@
       "prob_empate": 0.2766,
       "prob_visitante": 0.2433,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4127,
       "prob_empate_elo": 0.2513,
       "prob_visitante_elo": 0.336
@@ -852,7 +852,7 @@
       "prob_empate": 0.2108,
       "prob_visitante": 0.675,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2993,
       "prob_empate_elo": 0.213,
       "prob_visitante_elo": 0.4877
@@ -868,7 +868,7 @@
       "prob_empate": 0.2538,
       "prob_visitante": 0.0997,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.6964,
       "prob_empate_elo": 0.1179,
       "prob_visitante_elo": 0.1857
@@ -884,7 +884,7 @@
       "prob_empate": 0.2224,
       "prob_visitante": 0.0743,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.8798,
       "prob_empate_elo": 0.0444,
       "prob_visitante_elo": 0.0758
@@ -900,7 +900,7 @@
       "prob_empate": 0.208,
       "prob_visitante": 0.6811,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2877,
       "prob_empate_elo": 0.2019,
       "prob_visitante_elo": 0.5104
@@ -916,7 +916,7 @@
       "prob_empate": 0.3641,
       "prob_visitante": 0.2097,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7659,
       "prob_empate_elo": 0.0891,
       "prob_visitante_elo": 0.145
@@ -932,7 +932,7 @@
       "prob_empate": 0.326,
       "prob_visitante": 0.2251,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4234,
       "prob_empate_elo": 0.2457,
       "prob_visitante_elo": 0.3309
@@ -948,7 +948,7 @@
       "prob_empate": 0.2439,
       "prob_visitante": 0.1377,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.4433,
       "prob_empate_elo": 0.2353,
       "prob_visitante_elo": 0.3213
@@ -964,7 +964,7 @@
       "prob_empate": 0.2137,
       "prob_visitante": 0.636,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1816,
       "prob_empate_elo": 0.1149,
       "prob_visitante_elo": 0.7036
@@ -980,7 +980,7 @@
       "prob_empate": 0.1899,
       "prob_visitante": 0.0457,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7234,
       "prob_empate_elo": 0.1066,
       "prob_visitante_elo": 0.17
@@ -996,7 +996,7 @@
       "prob_empate": 0.2874,
       "prob_visitante": 0.528,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2237,
       "prob_empate_elo": 0.1468,
       "prob_visitante_elo": 0.6295
@@ -1012,7 +1012,7 @@
       "prob_empate": 0.2976,
       "prob_visitante": 0.5091,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.196,
       "prob_empate_elo": 0.1255,
       "prob_visitante_elo": 0.6785
@@ -1028,7 +1028,7 @@
       "prob_empate": 0.3593,
       "prob_visitante": 0.3352,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3779,
       "prob_empate_elo": 0.27,
       "prob_visitante_elo": 0.352
@@ -1044,7 +1044,7 @@
       "prob_empate": 0.1478,
       "prob_visitante": 0.8159,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.214,
       "prob_empate_elo": 0.1392,
       "prob_visitante_elo": 0.6467
@@ -1060,7 +1060,7 @@
       "prob_empate": 0.2286,
       "prob_visitante": 0.1062,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.6691,
       "prob_empate_elo": 0.1296,
       "prob_visitante_elo": 0.2014
@@ -1076,7 +1076,7 @@
       "prob_empate": 0.272,
       "prob_visitante": 0.5966,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.1841,
       "prob_empate_elo": 0.1167,
       "prob_visitante_elo": 0.6992
@@ -1092,7 +1092,7 @@
       "prob_empate": 0.2329,
       "prob_visitante": 0.2032,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.5029,
       "prob_empate_elo": 0.2055,
       "prob_visitante_elo": 0.2916
@@ -1108,7 +1108,7 @@
       "prob_empate": 0.3589,
       "prob_visitante": 0.2543,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3526,
       "prob_empate_elo": 0.2707,
       "prob_visitante_elo": 0.3767
@@ -1124,7 +1124,7 @@
       "prob_empate": 0.2947,
       "prob_visitante": 0.34,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.229,
       "prob_empate_elo": 0.1511,
       "prob_visitante_elo": 0.6199
@@ -1140,7 +1140,7 @@
       "prob_empate": 0.299,
       "prob_visitante": 0.1482,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.6098,
       "prob_empate_elo": 0.1556,
       "prob_visitante_elo": 0.2346
@@ -1156,7 +1156,7 @@
       "prob_empate": 0.1502,
       "prob_visitante": 0.7928,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.0442,
       "prob_empate_elo": 0.0254,
       "prob_visitante_elo": 0.9303
@@ -1172,7 +1172,7 @@
       "prob_empate": 0.3222,
       "prob_visitante": 0.1271,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7493,
       "prob_empate_elo": 0.0959,
       "prob_visitante_elo": 0.1548
@@ -1188,7 +1188,7 @@
       "prob_empate": 0.3798,
       "prob_visitante": 0.3586,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2843,
       "prob_empate_elo": 0.1987,
       "prob_visitante_elo": 0.5171
@@ -1204,7 +1204,7 @@
       "prob_empate": 0.1646,
       "prob_visitante": 0.7767,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2181,
       "prob_empate_elo": 0.1424,
       "prob_visitante_elo": 0.6395
@@ -1220,7 +1220,7 @@
       "prob_empate": 0.1556,
       "prob_visitante": 0.7936,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.2057,
       "prob_empate_elo": 0.1328,
       "prob_visitante_elo": 0.6615
@@ -1236,7 +1236,7 @@
       "prob_empate": 0.2684,
       "prob_visitante": 0.1466,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.7996,
       "prob_empate_elo": 0.0756,
       "prob_visitante_elo": 0.1248
@@ -1252,7 +1252,7 @@
       "prob_empate": 0.2653,
       "prob_visitante": 0.4495,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3512,
       "prob_empate_elo": 0.269,
       "prob_visitante_elo": 0.3798
@@ -1268,7 +1268,7 @@
       "prob_empate": 0.4716,
       "prob_visitante": 0.1889,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3083,
       "prob_empate_elo": 0.2219,
       "prob_visitante_elo": 0.4698
@@ -1284,7 +1284,7 @@
       "prob_empate": 0.3634,
       "prob_visitante": 0.3242,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.3601,
       "prob_empate_elo": 0.2799,
       "prob_visitante_elo": 0.3599
@@ -1300,7 +1300,7 @@
       "prob_empate": 0.1418,
       "prob_visitante": 0.8169,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-06T12:51:44Z",
+      "fecha_prediccion": "2026-06-06T15:32:07Z",
       "prob_local_elo": 0.0956,
       "prob_empate_elo": 0.0568,
       "prob_visitante_elo": 0.8476
