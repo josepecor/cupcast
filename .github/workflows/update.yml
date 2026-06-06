@@ -58,7 +58,8 @@ jobs:
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}"
 
           # Pull primero para evitar conflictos si hubo otro push
-          git pull --rebase origin main
+          # --autostash guarda/recupera los ficheros generados por el pipeline
+          git pull --rebase --autostash origin main
 
           # Forzar add de ficheros generados por el pipeline diario
           git add -f docs/predictions.json docs/track_record.json
