@@ -185,11 +185,12 @@ def run_daily(
 
     # ── Paso 4: reentrenar ──────────────────────────────────────────────────
     print(f"\n  Reentrenando con datos hasta {today}…")
-    dc = DixonColesModel()
-    dc.fit(df_all, reference_date=today)
-
+    # Elo primero: sus ratings se usan como pesos de calidad en Dixon-Coles.
     elo = EloModel()
     elo.fit(df_all, cutoff_date=today)
+
+    dc = DixonColesModel()
+    dc.fit(df_all, reference_date=today, elo_ratings=elo.ratings_)
 
     # ── Paso 5a: predecir partidos pendientes ────────────────────────────────
     upcoming = _upcoming_matches(df_all, schedule)
@@ -295,11 +296,12 @@ def run_backtest(df_all: pd.DataFrame) -> dict:
             print("  Sin partidos en el dataset, saltando.")
             continue
 
-        dc = DixonColesModel()
-        dc.fit(df_train, reference_date=cutoff)
-
+        # Elo primero para usar sus ratings como pesos de calidad en DC.
         elo = EloModel()
         elo.fit(df_train, cutoff_date=cutoff)
+
+        dc = DixonColesModel()
+        dc.fit(df_train, reference_date=cutoff, elo_ratings=elo.ratings_)
 
         dc_probs, elo_probs, outcomes = [], [], []
         for row in df_test.itertuples(index=False):

@@ -28,8 +28,39 @@ import pandas as pd
 from scipy.optimize import minimize
 from scipy.special import gammaln
 
-XI_DEFAULT = 0.003   # decaimiento por día; half-life ≈ 231 días (~8 meses)
-MAX_GOALS = 10       # truncación de la matriz de marcadores
+XI_DEFAULT = 0.003              # decaimiento por día; half-life ≈ 231 días (~8 meses)
+MAX_GOALS = 10                  # truncación de la matriz de marcadores
+OPPONENT_QUALITY_ALPHA = 0.5   # exponente de ponderación por calidad del rival (Elo)
+
+
+def _tournament_weight(tournament: str) -> float:
+    """
+    Factor multiplicativo por calidad del torneo.
+
+    Lógica: el Mundial es la máxima referencia. UEFA Euro y Copa América tienen
+    el siguiente nivel de competitividad real. Las clasificatorias FIFA son
+    competitivas porque los rivales son selecciones de la misma confederación.
+    AFCON, Copa Asiática y Gold Cup son torneos oficiales pero con una calidad
+    promedio de rivales inferior a Euro/Copa América → se tratan como clasificatorias.
+    Copa Árabe, torneos regionales menores y amistosos pesan menos.
+    """
+    t = tournament.lower()
+    if "world cup" in t and "qualif" not in t and "qualifier" not in t:
+        return 2.0
+    if any(x in t for x in ["uefa euro", "copa am", "nations league"]):
+        if "qualif" not in t and "qualifier" not in t:
+            return 1.5
+    if "qualif" in t or "qualifier" in t:
+        return 1.0
+    # AFCON, Asian Cup, Gold Cup: torneos de confederación pero calidad promedio
+    # similar a clasificatorias → mismo peso que clasificatorias
+    if any(x in t for x in ["african cup", "africa cup", "african nations",
+                              "asian cup", "gold cup", "concacaf championship"]):
+        return 1.0
+    if "friendly" in t:
+        return 0.5
+    # Copa Árabe, COSAFA, CECAFA, Kirin Cup, torneos regionales menores
+    return 0.6
 
 
 # ---------------------------------------------------------------------------
@@ -152,16 +183,27 @@ def _neg_ll_and_grad(
 
 class DixonColesModel:
     """
-    Dixon-Coles con decaimiento temporal.
+    Dixon-Coles con decaimiento temporal y ponderación opcional por calidad del rival.
 
     Parameters
     ----------
     xi : float
         Tasa de decaimiento por día. Por defecto 0.003 (half-life ~8 meses).
+    opponent_quality_alpha : float
+        Exponente aplicado al ratio Elo_medio_partido / Elo_medio_global.
+        0.0 desactiva la ponderación; 0.5 (default) da ajuste moderado;
+        1.0 da ajuste lineal. Solo tiene efecto si se pasa `elo_ratings` a fit().
     """
 
-    def __init__(self, xi: float = XI_DEFAULT) -> None:
+    def __init__(
+        self,
+        xi: float = XI_DEFAULT,
+        opponent_quality_alpha: float = OPPONENT_QUALITY_ALPHA,
+        use_tournament_weights: bool = False,
+    ) -> None:
         self.xi = xi
+        self.opponent_quality_alpha = opponent_quality_alpha
+        self.use_tournament_weights = use_tournament_weights
         self.teams_: list[str] = []
         self._attack: dict[str, float] = {}
         self._defense: dict[str, float] = {}
@@ -174,7 +216,10 @@ class DixonColesModel:
     # ------------------------------------------------------------------
 
     def fit(
-        self, df: pd.DataFrame, reference_date: str | pd.Timestamp
+        self,
+        df: pd.DataFrame,
+        reference_date: str | pd.Timestamp,
+        elo_ratings: dict[str, float] | None = None,
     ) -> "DixonColesModel":
         """
         Ajusta el modelo sobre partidos históricos.
@@ -187,6 +232,11 @@ class DixonColesModel:
         reference_date : str o Timestamp
             Fecha de referencia para el decaimiento temporal (normalmente el
             inicio del torneo o la fecha de hoy).
+        elo_ratings : dict[str, float] | None
+            Ratings Elo por selección (de EloModel.ratings_). Si se proporciona,
+            cada partido se pondera adicionalmente por (Elo_medio_partido /
+            Elo_medio_global)^opponent_quality_alpha, lo que reduce el peso de
+            partidos contra rivales débiles.
         """
         ref = pd.Timestamp(reference_date)
 
@@ -202,6 +252,29 @@ class DixonColesModel:
         mask = weights_all >= 1e-4
         df = df[mask].copy()
         weights = weights_all[mask]
+
+        # Ponderación por tipo de torneo: WC > clasificatorias > AFCON/Copa Árabe > amistosos.
+        if self.use_tournament_weights:
+            t_weights = np.array(
+                [_tournament_weight(t) for t in df["tournament"]], dtype=float
+            )
+            weights = weights * t_weights
+
+        # Ponderación adicional por calidad del rival (Elo promedio del partido).
+        # Reduce la influencia de partidos contra equipos muy débiles (AFCON de relleno,
+        # Arab Cup, etc.) sin eliminarlos del todo.
+        if elo_ratings is not None and self.opponent_quality_alpha > 0.0:
+            ratings_vals = np.array(list(elo_ratings.values()), dtype=float)
+            mean_elo = float(ratings_vals.mean())
+            home_elo = np.array(
+                [elo_ratings.get(t, mean_elo) for t in df["home"]], dtype=float
+            )
+            away_elo = np.array(
+                [elo_ratings.get(t, mean_elo) for t in df["away"]], dtype=float
+            )
+            avg_match_elo = (home_elo + away_elo) / 2.0
+            quality_mult = (avg_match_elo / mean_elo) ** self.opponent_quality_alpha
+            weights = weights * quality_mult
 
         # Excluir selecciones con muy pocos partidos recientes (p. ej. equipos CONIFA).
         # Parámetros con <5 partidos son poco fiables y añaden ruido.
@@ -369,7 +442,10 @@ class DixonColesModel:
 
     def __repr__(self) -> str:
         status = f"fitted, {len(self.teams_)} teams" if self._fitted else "not fitted"
-        return f"DixonColesModel(xi={self.xi}, {status})"
+        return (
+            f"DixonColesModel(xi={self.xi}, alpha={self.opponent_quality_alpha}, "
+            f"tournament_weights={self.use_tournament_weights}, {status})"
+        )
 
 
 # ---------------------------------------------------------------------------
