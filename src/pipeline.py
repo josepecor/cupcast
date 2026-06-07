@@ -28,6 +28,7 @@ from elo import EloModel  # noqa: E402
 from evaluate import evaluate  # noqa: E402
 from freeze import FreezeManager, make_match_id  # noqa: E402
 from simulate import TournamentSimulator, load_groups  # noqa: E402
+from schedule import fetch_and_save as fetch_schedule  # noqa: E402
 
 DOCS_DIR = _ROOT / "docs"
 DATA_DIR = _ROOT / "data"
@@ -102,7 +103,7 @@ def _detect_current_phase(df: pd.DataFrame, schedule: list[dict], today: str) ->
     - En curso: la primera fase con partidos iniciados pero no completamente resueltos.
     - Finalizado: todas las fases resueltas.
     """
-    phases = ["grupos", "R32", "octavos", "cuartos", "semifinal", "final"]
+    phases = ["grupos", "r32", "octavos", "cuartos", "semifinal", "final"]
 
     known_matches = [m for m in schedule if "TBD" not in m.get("local", "")]
     if not known_matches:
@@ -145,6 +146,11 @@ def run_daily(
     today   = now_str[:10]
 
     fm       = FreezeManager(DOCS_DIR)
+
+    # ── Paso 0: actualizar calendario desde la API (falla silenciosa → caché) ─
+    print("  Actualizando calendario desde football-data.org…")
+    fetch_schedule()
+
     schedule = _load_schedule()
 
     # ── Paso 1: cargar predicciones vivas ───────────────────────────────────

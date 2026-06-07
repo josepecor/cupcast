@@ -1,9 +1,12 @@
 {
-  "tournament": "FIFA World Cup 2026",
-  "note": "Grupos oficiales. Eliminatorias con fechas aproximadas y equipos TBD.",
+  "metadata": {
+    "fuente": "football-data.org",
+    "actualizado": "2026-06-07T08:25:11Z",
+    "total_partidos": 104
+  },
   "matches": [
     {
-      "id": "2026-06-11-Mexico-SouthAfrica",
+      "id": "2026-06-11-Mexico-South-Africa",
       "fecha": "2026-06-11T19:00:00Z",
       "fase": "grupos",
       "grupo": "A",
@@ -11,7 +14,7 @@
       "visitante": "South Africa"
     },
     {
-      "id": "2026-06-12-SouthKorea-Czechia",
+      "id": "2026-06-12-South-Korea-Czechia",
       "fecha": "2026-06-12T02:00:00Z",
       "fase": "grupos",
       "grupo": "A",
@@ -19,7 +22,7 @@
       "visitante": "Czechia"
     },
     {
-      "id": "2026-06-12-Canada-BosniaandHerzegovina",
+      "id": "2026-06-12-Canada-Bosnia-and-Herzegovina",
       "fecha": "2026-06-12T19:00:00Z",
       "fase": "grupos",
       "grupo": "B",
@@ -67,7 +70,7 @@
       "visitante": "Turkey"
     },
     {
-      "id": "2026-06-14-Germany-Curacao",
+      "id": "2026-06-14-Germany-Curaçao",
       "fecha": "2026-06-14T17:00:00Z",
       "fase": "grupos",
       "grupo": "E",
@@ -83,7 +86,7 @@
       "visitante": "Japan"
     },
     {
-      "id": "2026-06-14-CotedIvoire-Ecuador",
+      "id": "2026-06-14-Côte-d'Ivoire-Ecuador",
       "fecha": "2026-06-14T23:00:00Z",
       "fase": "grupos",
       "grupo": "E",
@@ -99,8 +102,8 @@
       "visitante": "Tunisia"
     },
     {
-      "id": "2026-06-15-Spain-CapeVerde",
-      "fecha": "2026-06-15T17:00:00Z",
+      "id": "2026-06-15-Spain-Cape-Verde",
+      "fecha": "2026-06-15T16:00:00Z",
       "fase": "grupos",
       "grupo": "H",
       "local": "Spain",
@@ -108,23 +111,23 @@
     },
     {
       "id": "2026-06-15-Belgium-Egypt",
-      "fecha": "2026-06-15T22:00:00Z",
+      "fecha": "2026-06-15T19:00:00Z",
       "fase": "grupos",
       "grupo": "G",
       "local": "Belgium",
       "visitante": "Egypt"
     },
     {
-      "id": "2026-06-16-SaudiArabia-Uruguay",
-      "fecha": "2026-06-16T02:00:00Z",
+      "id": "2026-06-15-Saudi-Arabia-Uruguay",
+      "fecha": "2026-06-15T22:00:00Z",
       "fase": "grupos",
       "grupo": "H",
       "local": "Saudi Arabia",
       "visitante": "Uruguay"
     },
     {
-      "id": "2026-06-16-Iran-NewZealand",
-      "fecha": "2026-06-16T04:00:00Z",
+      "id": "2026-06-16-Iran-New-Zealand",
+      "fecha": "2026-06-16T01:00:00Z",
       "fase": "grupos",
       "grupo": "G",
       "local": "Iran",
@@ -163,7 +166,7 @@
       "visitante": "Jordan"
     },
     {
-      "id": "2026-06-17-Portugal-DRCongo",
+      "id": "2026-06-17-Portugal-DR-Congo",
       "fecha": "2026-06-17T17:00:00Z",
       "fase": "grupos",
       "grupo": "K",
@@ -179,8 +182,8 @@
       "visitante": "Croatia"
     },
     {
-      "id": "2026-06-18-Ghana-Panama",
-      "fecha": "2026-06-18T00:00:00Z",
+      "id": "2026-06-17-Ghana-Panama",
+      "fecha": "2026-06-17T23:00:00Z",
       "fase": "grupos",
       "grupo": "L",
       "local": "Ghana",
@@ -195,15 +198,15 @@
       "visitante": "Colombia"
     },
     {
-      "id": "2026-06-18-Czechia-SouthAfrica",
-      "fecha": "2026-06-18T17:00:00Z",
+      "id": "2026-06-18-Czechia-South-Africa",
+      "fecha": "2026-06-18T16:00:00Z",
       "fase": "grupos",
       "grupo": "A",
       "local": "Czechia",
       "visitante": "South Africa"
     },
     {
-      "id": "2026-06-18-Switzerland-BosniaandHerzegovina",
+      "id": "2026-06-18-Switzerland-Bosnia-and-Herzegovina",
       "fecha": "2026-06-18T19:00:00Z",
       "fase": "grupos",
       "grupo": "B",
@@ -219,7 +222,7 @@
       "visitante": "Qatar"
     },
     {
-      "id": "2026-06-19-Mexico-SouthKorea",
+      "id": "2026-06-19-Mexico-South-Korea",
       "fecha": "2026-06-19T01:00:00Z",
       "fase": "grupos",
       "grupo": "A",
@@ -244,7 +247,7 @@
     },
     {
       "id": "2026-06-20-Brazil-Haiti",
-      "fecha": "2026-06-20T01:00:00Z",
+      "fecha": "2026-06-20T00:30:00Z",
       "fase": "grupos",
       "grupo": "C",
       "local": "Brazil",
@@ -252,7 +255,7 @@
     },
     {
       "id": "2026-06-20-Turkey-Paraguay",
-      "fecha": "2026-06-20T04:00:00Z",
+      "fecha": "2026-06-20T03:00:00Z",
       "fase": "grupos",
       "grupo": "D",
       "local": "Turkey",
@@ -267,7 +270,7 @@
       "visitante": "Sweden"
     },
     {
-      "id": "2026-06-20-Germany-CotedIvoire",
+      "id": "2026-06-20-Germany-Côte-d'Ivoire",
       "fecha": "2026-06-20T20:00:00Z",
       "fase": "grupos",
       "grupo": "E",
@@ -275,8 +278,8 @@
       "visitante": "Côte d'Ivoire"
     },
     {
-      "id": "2026-06-20-Ecuador-Curacao",
-      "fecha": "2026-06-20T23:00:00Z",
+      "id": "2026-06-21-Ecuador-Curaçao",
+      "fecha": "2026-06-21T00:00:00Z",
       "fase": "grupos",
       "grupo": "E",
       "local": "Ecuador",
@@ -284,15 +287,15 @@
     },
     {
       "id": "2026-06-21-Tunisia-Japan",
-      "fecha": "2026-06-21T02:00:00Z",
+      "fecha": "2026-06-21T04:00:00Z",
       "fase": "grupos",
       "grupo": "F",
       "local": "Tunisia",
       "visitante": "Japan"
     },
     {
-      "id": "2026-06-21-Spain-SaudiArabia",
-      "fecha": "2026-06-21T17:00:00Z",
+      "id": "2026-06-21-Spain-Saudi-Arabia",
+      "fecha": "2026-06-21T16:00:00Z",
       "fase": "grupos",
       "grupo": "H",
       "local": "Spain",
@@ -307,7 +310,7 @@
       "visitante": "Iran"
     },
     {
-      "id": "2026-06-21-Uruguay-CapeVerde",
+      "id": "2026-06-21-Uruguay-Cape-Verde",
       "fecha": "2026-06-21T22:00:00Z",
       "fase": "grupos",
       "grupo": "H",
@@ -315,7 +318,7 @@
       "visitante": "Cape Verde"
     },
     {
-      "id": "2026-06-22-NewZealand-Egypt",
+      "id": "2026-06-22-New-Zealand-Egypt",
       "fecha": "2026-06-22T01:00:00Z",
       "fase": "grupos",
       "grupo": "G",
@@ -324,7 +327,7 @@
     },
     {
       "id": "2026-06-22-Argentina-Austria",
-      "fecha": "2026-06-22T18:00:00Z",
+      "fecha": "2026-06-22T17:00:00Z",
       "fase": "grupos",
       "grupo": "J",
       "local": "Argentina",
@@ -356,7 +359,7 @@
     },
     {
       "id": "2026-06-23-Portugal-Uzbekistan",
-      "fecha": "2026-06-23T18:00:00Z",
+      "fecha": "2026-06-23T17:00:00Z",
       "fase": "grupos",
       "grupo": "K",
       "local": "Portugal",
@@ -379,7 +382,7 @@
       "visitante": "Croatia"
     },
     {
-      "id": "2026-06-24-Colombia-DRCongo",
+      "id": "2026-06-24-Colombia-DR-Congo",
       "fecha": "2026-06-24T02:00:00Z",
       "fase": "grupos",
       "grupo": "K",
@@ -395,20 +398,12 @@
       "visitante": "Canada"
     },
     {
-      "id": "2026-06-24-BosniaandHerzegovina-Qatar",
+      "id": "2026-06-24-Bosnia-and-Herzegovina-Qatar",
       "fecha": "2026-06-24T19:00:00Z",
       "fase": "grupos",
       "grupo": "B",
       "local": "Bosnia and Herzegovina",
       "visitante": "Qatar"
-    },
-    {
-      "id": "2026-06-24-Scotland-Brazil",
-      "fecha": "2026-06-24T22:00:00Z",
-      "fase": "grupos",
-      "grupo": "C",
-      "local": "Scotland",
-      "visitante": "Brazil"
     },
     {
       "id": "2026-06-24-Morocco-Haiti",
@@ -419,16 +414,24 @@
       "visitante": "Haiti"
     },
     {
+      "id": "2026-06-24-Scotland-Brazil",
+      "fecha": "2026-06-24T22:00:00Z",
+      "fase": "grupos",
+      "grupo": "C",
+      "local": "Scotland",
+      "visitante": "Brazil"
+    },
+    {
       "id": "2026-06-25-Czechia-Mexico",
-      "fecha": "2026-06-25T00:00:00Z",
+      "fecha": "2026-06-25T01:00:00Z",
       "fase": "grupos",
       "grupo": "A",
       "local": "Czechia",
       "visitante": "Mexico"
     },
     {
-      "id": "2026-06-25-SouthAfrica-SouthKorea",
-      "fecha": "2026-06-25T00:00:00Z",
+      "id": "2026-06-25-South-Africa-South-Korea",
+      "fecha": "2026-06-25T01:00:00Z",
       "fase": "grupos",
       "grupo": "A",
       "local": "South Africa",
@@ -443,7 +446,7 @@
       "visitante": "Germany"
     },
     {
-      "id": "2026-06-25-Curacao-CotedIvoire",
+      "id": "2026-06-25-Curaçao-Côte-d'Ivoire",
       "fecha": "2026-06-25T20:00:00Z",
       "fase": "grupos",
       "grupo": "E",
@@ -451,24 +454,24 @@
       "visitante": "Côte d'Ivoire"
     },
     {
-      "id": "2026-06-25-Japan-Sweden",
-      "fecha": "2026-06-25T21:00:00Z",
-      "fase": "grupos",
-      "grupo": "F",
-      "local": "Japan",
-      "visitante": "Sweden"
-    },
-    {
       "id": "2026-06-25-Tunisia-Netherlands",
-      "fecha": "2026-06-25T21:00:00Z",
+      "fecha": "2026-06-25T23:00:00Z",
       "fase": "grupos",
       "grupo": "F",
       "local": "Tunisia",
       "visitante": "Netherlands"
     },
     {
+      "id": "2026-06-25-Japan-Sweden",
+      "fecha": "2026-06-25T23:00:00Z",
+      "fase": "grupos",
+      "grupo": "F",
+      "local": "Japan",
+      "visitante": "Sweden"
+    },
+    {
       "id": "2026-06-26-Turkey-USA",
-      "fecha": "2026-06-26T00:00:00Z",
+      "fecha": "2026-06-26T02:00:00Z",
       "fase": "grupos",
       "grupo": "D",
       "local": "Turkey",
@@ -476,7 +479,7 @@
     },
     {
       "id": "2026-06-26-Paraguay-Australia",
-      "fecha": "2026-06-26T00:00:00Z",
+      "fecha": "2026-06-26T02:00:00Z",
       "fase": "grupos",
       "grupo": "D",
       "local": "Paraguay",
@@ -499,36 +502,36 @@
       "visitante": "Iraq"
     },
     {
-      "id": "2026-06-26-CapeVerde-Spain",
-      "fecha": "2026-06-26T20:00:00Z",
-      "fase": "grupos",
-      "grupo": "H",
-      "local": "Cape Verde",
-      "visitante": "Spain"
-    },
-    {
-      "id": "2026-06-26-Uruguay-SaudiArabia",
-      "fecha": "2026-06-26T20:00:00Z",
+      "id": "2026-06-27-Uruguay-Spain",
+      "fecha": "2026-06-27T00:00:00Z",
       "fase": "grupos",
       "grupo": "H",
       "local": "Uruguay",
+      "visitante": "Spain"
+    },
+    {
+      "id": "2026-06-27-Cape-Verde-Saudi-Arabia",
+      "fecha": "2026-06-27T00:00:00Z",
+      "fase": "grupos",
+      "grupo": "H",
+      "local": "Cape Verde",
       "visitante": "Saudi Arabia"
     },
     {
-      "id": "2026-06-27-Egypt-Iran",
-      "fecha": "2026-06-27T01:00:00Z",
-      "fase": "grupos",
-      "grupo": "G",
-      "local": "Egypt",
-      "visitante": "Iran"
-    },
-    {
-      "id": "2026-06-27-NewZealand-Belgium",
-      "fecha": "2026-06-27T01:00:00Z",
+      "id": "2026-06-27-New-Zealand-Belgium",
+      "fecha": "2026-06-27T03:00:00Z",
       "fase": "grupos",
       "grupo": "G",
       "local": "New Zealand",
       "visitante": "Belgium"
+    },
+    {
+      "id": "2026-06-27-Egypt-Iran",
+      "fecha": "2026-06-27T03:00:00Z",
+      "fase": "grupos",
+      "grupo": "G",
+      "local": "Egypt",
+      "visitante": "Iran"
     },
     {
       "id": "2026-06-27-Panama-England",
@@ -547,28 +550,20 @@
       "visitante": "Ghana"
     },
     {
-      "id": "2026-06-28-Colombia-Portugal",
-      "fecha": "2026-06-28T01:00:00Z",
+      "id": "2026-06-27-Colombia-Portugal",
+      "fecha": "2026-06-27T23:30:00Z",
       "fase": "grupos",
       "grupo": "K",
       "local": "Colombia",
       "visitante": "Portugal"
     },
     {
-      "id": "2026-06-28-DRCongo-Uzbekistan",
-      "fecha": "2026-06-28T01:00:00Z",
+      "id": "2026-06-27-DR-Congo-Uzbekistan",
+      "fecha": "2026-06-27T23:30:00Z",
       "fase": "grupos",
       "grupo": "K",
       "local": "DR Congo",
       "visitante": "Uzbekistan"
-    },
-    {
-      "id": "2026-06-28-Algeria-Austria",
-      "fecha": "2026-06-28T02:00:00Z",
-      "fase": "grupos",
-      "grupo": "J",
-      "local": "Algeria",
-      "visitante": "Austria"
     },
     {
       "id": "2026-06-28-Jordan-Argentina",
@@ -579,250 +574,266 @@
       "visitante": "Argentina"
     },
     {
-      "id": "2026-07-01-R32-M01",
-      "fecha": "2026-07-01T17:00:00Z",
+      "id": "2026-06-28-Algeria-Austria",
+      "fecha": "2026-06-28T02:00:00Z",
+      "fase": "grupos",
+      "grupo": "J",
+      "local": "Algeria",
+      "visitante": "Austria"
+    },
+    {
+      "id": "2026-06-28-TBD-TBD",
+      "fecha": "2026-06-28T19:00:00Z",
       "fase": "r32",
-      "slot": "R32-M01",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-01-R32-M02",
+      "id": "2026-06-29-TBD-TBD",
+      "fecha": "2026-06-29T17:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-06-29-TBD-TBD",
+      "fecha": "2026-06-29T20:30:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-06-30-TBD-TBD",
+      "fecha": "2026-06-30T01:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-06-30-TBD-TBD",
+      "fecha": "2026-06-30T17:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-06-30-TBD-TBD",
+      "fecha": "2026-06-30T21:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-01-TBD-TBD",
+      "fecha": "2026-07-01T01:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-01-TBD-TBD",
+      "fecha": "2026-07-01T16:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-01-TBD-TBD",
       "fecha": "2026-07-01T20:00:00Z",
       "fase": "r32",
-      "slot": "R32-M02",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-02-R32-M03",
-      "fecha": "2026-07-02T17:00:00Z",
+      "id": "2026-07-02-TBD-TBD",
+      "fecha": "2026-07-02T00:00:00Z",
       "fase": "r32",
-      "slot": "R32-M03",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-02-R32-M04",
-      "fecha": "2026-07-02T20:00:00Z",
+      "id": "2026-07-02-TBD-TBD",
+      "fecha": "2026-07-02T19:00:00Z",
       "fase": "r32",
-      "slot": "R32-M04",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-03-R32-M05",
-      "fecha": "2026-07-03T17:00:00Z",
+      "id": "2026-07-02-TBD-TBD",
+      "fecha": "2026-07-02T23:00:00Z",
       "fase": "r32",
-      "slot": "R32-M05",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-03-R32-M06",
-      "fecha": "2026-07-03T20:00:00Z",
+      "id": "2026-07-03-TBD-TBD",
+      "fecha": "2026-07-03T03:00:00Z",
       "fase": "r32",
-      "slot": "R32-M06",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-04-R32-M07",
+      "id": "2026-07-03-TBD-TBD",
+      "fecha": "2026-07-03T18:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-03-TBD-TBD",
+      "fecha": "2026-07-03T22:00:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-04-TBD-TBD",
+      "fecha": "2026-07-04T01:30:00Z",
+      "fase": "r32",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-04-TBD-TBD",
       "fecha": "2026-07-04T17:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M07",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-04-R32-M08",
-      "fecha": "2026-07-04T20:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M08",
+      "id": "2026-07-04-TBD-TBD",
+      "fecha": "2026-07-04T21:00:00Z",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-05-R32-M09",
-      "fecha": "2026-07-05T00:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M09",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-05-R32-M10",
-      "fecha": "2026-07-05T03:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M10",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-05-R32-M11",
-      "fecha": "2026-07-05T17:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M11",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-05-R32-M12",
+      "id": "2026-07-05-TBD-TBD",
       "fecha": "2026-07-05T20:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M12",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-06-R32-M13",
+      "id": "2026-07-06-TBD-TBD",
       "fecha": "2026-07-06T00:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M13",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-06-R32-M14",
-      "fecha": "2026-07-06T03:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M14",
+      "id": "2026-07-06-TBD-TBD",
+      "fecha": "2026-07-06T19:00:00Z",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-06-R32-M15",
-      "fecha": "2026-07-06T17:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M15",
+      "id": "2026-07-07-TBD-TBD",
+      "fecha": "2026-07-07T00:00:00Z",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-06-R32-M16",
-      "fecha": "2026-07-06T20:00:00Z",
-      "fase": "r32",
-      "slot": "R32-M16",
+      "id": "2026-07-07-TBD-TBD",
+      "fecha": "2026-07-07T16:00:00Z",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-09-R16-M01",
-      "fecha": "2026-07-09T17:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M01",
+      "id": "2026-07-07-TBD-TBD",
+      "fecha": "2026-07-07T20:00:00Z",
+      "fase": "last_16",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-09-R16-M02",
+      "id": "2026-07-09-TBD-TBD",
       "fecha": "2026-07-09T20:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M02",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-09-R16-M03",
-      "fecha": "2026-07-09T23:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M03",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-10-R16-M04",
-      "fecha": "2026-07-10T02:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M04",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-10-R16-M05",
-      "fecha": "2026-07-10T17:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M05",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-10-R16-M06",
-      "fecha": "2026-07-10T20:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M06",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-10-R16-M07",
-      "fecha": "2026-07-10T23:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M07",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-11-R16-M08",
-      "fecha": "2026-07-11T02:00:00Z",
-      "fase": "octavos",
-      "slot": "R16-M08",
-      "local": "TBD",
-      "visitante": "TBD"
-    },
-    {
-      "id": "2026-07-13-QF-M01",
-      "fecha": "2026-07-13T17:00:00Z",
       "fase": "cuartos",
-      "slot": "QF-M01",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-13-QF-M02",
-      "fecha": "2026-07-13T20:00:00Z",
+      "id": "2026-07-10-TBD-TBD",
+      "fecha": "2026-07-10T19:00:00Z",
       "fase": "cuartos",
-      "slot": "QF-M02",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-14-QF-M03",
-      "fecha": "2026-07-14T17:00:00Z",
+      "id": "2026-07-11-TBD-TBD",
+      "fecha": "2026-07-11T21:00:00Z",
       "fase": "cuartos",
-      "slot": "QF-M03",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-14-QF-M04",
-      "fecha": "2026-07-14T20:00:00Z",
+      "id": "2026-07-12-TBD-TBD",
+      "fecha": "2026-07-12T01:00:00Z",
       "fase": "cuartos",
-      "slot": "QF-M04",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-17-SF-M01",
-      "fecha": "2026-07-17T19:00:00Z",
+      "id": "2026-07-14-TBD-TBD",
+      "fecha": "2026-07-14T19:00:00Z",
       "fase": "semifinal",
-      "slot": "SF-M01",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-18-SF-M02",
-      "fecha": "2026-07-18T19:00:00Z",
+      "id": "2026-07-15-TBD-TBD",
+      "fecha": "2026-07-15T19:00:00Z",
       "fase": "semifinal",
-      "slot": "SF-M02",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     },
     {
-      "id": "2026-07-22-Final",
-      "fecha": "2026-07-22T19:00:00Z",
+      "id": "2026-07-18-TBD-TBD",
+      "fecha": "2026-07-18T21:00:00Z",
+      "fase": "third_place",
+      "grupo": "",
+      "local": "TBD",
+      "visitante": "TBD"
+    },
+    {
+      "id": "2026-07-19-TBD-TBD",
+      "fecha": "2026-07-19T19:00:00Z",
       "fase": "final",
-      "slot": "Final",
+      "grupo": "",
       "local": "TBD",
       "visitante": "TBD"
     }
