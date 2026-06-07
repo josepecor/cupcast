@@ -1,7 +1,7 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "generado": "2026-06-07T04:35:19Z",
+    "generado": "2026-06-07T07:31:40Z",
     "entrenado_hasta": "2026-06-07",
     "fase_actual": "grupos",
     "modelo": "dixon-coles-v1"
@@ -9,154 +9,146 @@
   "favoritos": [
     {
       "equipo": "Argentina",
-      "prob_campeon": 0.1773
+      "prob_campeon": 0.1766
     },
     {
       "equipo": "Spain",
-      "prob_campeon": 0.1263
+      "prob_campeon": 0.111
     },
     {
       "equipo": "Morocco",
-      "prob_campeon": 0.0955
+      "prob_campeon": 0.089
     },
     {
       "equipo": "Japan",
-      "prob_campeon": 0.0825
-    },
-    {
-      "equipo": "Portugal",
-      "prob_campeon": 0.0565
+      "prob_campeon": 0.0881
     },
     {
       "equipo": "Brazil",
-      "prob_campeon": 0.0556
+      "prob_campeon": 0.0562
     },
     {
       "equipo": "England",
-      "prob_campeon": 0.0548
+      "prob_campeon": 0.0553
     },
     {
       "equipo": "Switzerland",
-      "prob_campeon": 0.0458
+      "prob_campeon": 0.0456
+    },
+    {
+      "equipo": "Portugal",
+      "prob_campeon": 0.0447
     },
     {
       "equipo": "Germany",
-      "prob_campeon": 0.0404
-    },
-    {
-      "equipo": "Ecuador",
-      "prob_campeon": 0.0328
-    },
-    {
-      "equipo": "Norway",
-      "prob_campeon": 0.032
-    },
-    {
-      "equipo": "Netherlands",
-      "prob_campeon": 0.0305
-    },
-    {
-      "equipo": "France",
-      "prob_campeon": 0.0296
-    },
-    {
-      "equipo": "Mexico",
-      "prob_campeon": 0.0189
-    },
-    {
-      "equipo": "Colombia",
-      "prob_campeon": 0.0176
+      "prob_campeon": 0.0424
     },
     {
       "equipo": "Belgium",
-      "prob_campeon": 0.0168
+      "prob_campeon": 0.0389
+    },
+    {
+      "equipo": "Norway",
+      "prob_campeon": 0.0368
+    },
+    {
+      "equipo": "France",
+      "prob_campeon": 0.0319
+    },
+    {
+      "equipo": "Netherlands",
+      "prob_campeon": 0.0312
+    },
+    {
+      "equipo": "Ecuador",
+      "prob_campeon": 0.03
+    },
+    {
+      "equipo": "Colombia",
+      "prob_campeon": 0.0167
+    },
+    {
+      "equipo": "Mexico",
+      "prob_campeon": 0.0162
     },
     {
       "equipo": "Austria",
-      "prob_campeon": 0.0156
+      "prob_campeon": 0.0152
     },
     {
       "equipo": "Algeria",
-      "prob_campeon": 0.0148
-    },
-    {
-      "equipo": "Paraguay",
-      "prob_campeon": 0.0081
-    },
-    {
-      "equipo": "Côte d'Ivoire",
-      "prob_campeon": 0.0065
-    },
-    {
-      "equipo": "Canada",
-      "prob_campeon": 0.0064
+      "prob_campeon": 0.0129
     },
     {
       "equipo": "Turkey",
+      "prob_campeon": 0.0083
+    },
+    {
+      "equipo": "Canada",
+      "prob_campeon": 0.0075
+    },
+    {
+      "equipo": "Côte d'Ivoire",
+      "prob_campeon": 0.0068
+    },
+    {
+      "equipo": "Paraguay",
       "prob_campeon": 0.0061
     },
     {
-      "equipo": "Senegal",
-      "prob_campeon": 0.006
-    },
-    {
       "equipo": "Croatia",
-      "prob_campeon": 0.0054
+      "prob_campeon": 0.0055
     },
     {
       "equipo": "Uruguay",
-      "prob_campeon": 0.0049
+      "prob_campeon": 0.0054
     },
     {
-      "equipo": "Iran",
-      "prob_campeon": 0.0036
+      "equipo": "Senegal",
+      "prob_campeon": 0.0051
+    },
+    {
+      "equipo": "Scotland",
+      "prob_campeon": 0.0045
     },
     {
       "equipo": "DR Congo",
       "prob_campeon": 0.0032
     },
     {
-      "equipo": "Egypt",
-      "prob_campeon": 0.0019
+      "equipo": "Iran",
+      "prob_campeon": 0.0031
     },
     {
       "equipo": "Australia",
-      "prob_campeon": 0.0017
+      "prob_campeon": 0.0027
     },
     {
-      "equipo": "Scotland",
-      "prob_campeon": 0.001
+      "equipo": "Egypt",
+      "prob_campeon": 0.0013
     },
     {
       "equipo": "South Korea",
-      "prob_campeon": 0.0006
-    },
-    {
-      "equipo": "USA",
-      "prob_campeon": 0.0004
-    },
-    {
-      "equipo": "Czechia",
-      "prob_campeon": 0.0003
+      "prob_campeon": 0.0007
     },
     {
       "equipo": "Sweden",
+      "prob_campeon": 0.0005
+    },
+    {
+      "equipo": "Czechia",
       "prob_campeon": 0.0002
     },
     {
-      "equipo": "Tunisia",
-      "prob_campeon": 0.0001
-    },
-    {
-      "equipo": "Cape Verde",
-      "prob_campeon": 0.0001
-    },
-    {
-      "equipo": "Iraq",
-      "prob_campeon": 0.0001
+      "equipo": "USA",
+      "prob_campeon": 0.0002
     },
     {
       "equipo": "Uzbekistan",
+      "prob_campeon": 0.0001
+    },
+    {
+      "equipo": "Panama",
       "prob_campeon": 0.0001
     }
   ],
@@ -168,14 +160,14 @@
       "grupo": "A",
       "local": "Mexico",
       "visitante": "South Africa",
-      "prob_local": 0.6347,
-      "prob_empate": 0.2632,
-      "prob_visitante": 0.1021,
+      "prob_local": 0.6239,
+      "prob_empate": 0.273,
+      "prob_visitante": 0.1031,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7934,
-      "prob_empate_elo": 0.0781,
-      "prob_visitante_elo": 0.1285
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.7854,
+      "prob_empate_elo": 0.0813,
+      "prob_visitante_elo": 0.1333
     },
     {
       "id": "2026-06-12-SouthKorea-Czechia",
@@ -184,11 +176,11 @@
       "grupo": "A",
       "local": "South Korea",
       "visitante": "Czechia",
-      "prob_local": 0.3739,
-      "prob_empate": 0.2924,
-      "prob_visitante": 0.3337,
+      "prob_local": 0.3729,
+      "prob_empate": 0.2931,
+      "prob_visitante": 0.334,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.4792,
       "prob_empate_elo": 0.2172,
       "prob_visitante_elo": 0.3036
@@ -200,14 +192,14 @@
       "grupo": "B",
       "local": "Canada",
       "visitante": "Bosnia and Herzegovina",
-      "prob_local": 0.4906,
-      "prob_empate": 0.3388,
-      "prob_visitante": 0.1705,
+      "prob_local": 0.492,
+      "prob_empate": 0.3414,
+      "prob_visitante": 0.1667,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7184,
-      "prob_empate_elo": 0.1087,
-      "prob_visitante_elo": 0.1729
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.7132,
+      "prob_empate_elo": 0.1108,
+      "prob_visitante_elo": 0.176
     },
     {
       "id": "2026-06-13-USA-Paraguay",
@@ -216,14 +208,14 @@
       "grupo": "D",
       "local": "USA",
       "visitante": "Paraguay",
-      "prob_local": 0.2096,
-      "prob_empate": 0.2792,
-      "prob_visitante": 0.5112,
+      "prob_local": 0.2178,
+      "prob_empate": 0.2881,
+      "prob_visitante": 0.4942,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.327,
-      "prob_empate_elo": 0.2414,
-      "prob_visitante_elo": 0.4316
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3222,
+      "prob_empate_elo": 0.2362,
+      "prob_visitante_elo": 0.4416
     },
     {
       "id": "2026-06-13-Qatar-Switzerland",
@@ -232,14 +224,14 @@
       "grupo": "B",
       "local": "Qatar",
       "visitante": "Switzerland",
-      "prob_local": 0.018,
-      "prob_empate": 0.0643,
-      "prob_visitante": 0.9177,
+      "prob_local": 0.0161,
+      "prob_empate": 0.0636,
+      "prob_visitante": 0.9202,
       "marcador_probable": "0-3",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.1119,
-      "prob_empate_elo": 0.0672,
-      "prob_visitante_elo": 0.8208
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.1115,
+      "prob_empate_elo": 0.0669,
+      "prob_visitante_elo": 0.8215
     },
     {
       "id": "2026-06-13-Brazil-Morocco",
@@ -248,14 +240,14 @@
       "grupo": "C",
       "local": "Brazil",
       "visitante": "Morocco",
-      "prob_local": 0.2716,
-      "prob_empate": 0.3519,
-      "prob_visitante": 0.3766,
+      "prob_local": 0.276,
+      "prob_empate": 0.3507,
+      "prob_visitante": 0.3733,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.4826,
-      "prob_empate_elo": 0.2155,
-      "prob_visitante_elo": 0.3019
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.4867,
+      "prob_empate_elo": 0.2135,
+      "prob_visitante_elo": 0.2998
     },
     {
       "id": "2026-06-14-Haiti-Scotland",
@@ -264,14 +256,14 @@
       "grupo": "C",
       "local": "Haiti",
       "visitante": "Scotland",
-      "prob_local": 0.1584,
-      "prob_empate": 0.2394,
-      "prob_visitante": 0.6022,
-      "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.2892,
-      "prob_empate_elo": 0.2032,
-      "prob_visitante_elo": 0.5076
+      "prob_local": 0.1187,
+      "prob_empate": 0.2035,
+      "prob_visitante": 0.6777,
+      "marcador_probable": "0-2",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2811,
+      "prob_empate_elo": 0.1957,
+      "prob_visitante_elo": 0.5232
     },
     {
       "id": "2026-06-14-Australia-Turkey",
@@ -280,14 +272,14 @@
       "grupo": "D",
       "local": "Australia",
       "visitante": "Turkey",
-      "prob_local": 0.2635,
-      "prob_empate": 0.3135,
-      "prob_visitante": 0.423,
+      "prob_local": 0.2825,
+      "prob_empate": 0.319,
+      "prob_visitante": 0.3985,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3365,
-      "prob_empate_elo": 0.2519,
-      "prob_visitante_elo": 0.4117
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3335,
+      "prob_empate_elo": 0.2485,
+      "prob_visitante_elo": 0.418
     },
     {
       "id": "2026-06-14-Germany-Curacao",
@@ -296,14 +288,14 @@
       "grupo": "E",
       "local": "Germany",
       "visitante": "Curaçao",
-      "prob_local": 0.9682,
-      "prob_empate": 0.026,
-      "prob_visitante": 0.0059,
+      "prob_local": 0.9475,
+      "prob_empate": 0.0421,
+      "prob_visitante": 0.0104,
       "marcador_probable": "4-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.8457,
-      "prob_empate_elo": 0.0575,
-      "prob_visitante_elo": 0.0968
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.8493,
+      "prob_empate_elo": 0.0561,
+      "prob_visitante_elo": 0.0946
     },
     {
       "id": "2026-06-14-Netherlands-Japan",
@@ -312,11 +304,11 @@
       "grupo": "F",
       "local": "Netherlands",
       "visitante": "Japan",
-      "prob_local": 0.2561,
-      "prob_empate": 0.3552,
-      "prob_visitante": 0.3887,
+      "prob_local": 0.2527,
+      "prob_empate": 0.3576,
+      "prob_visitante": 0.3897,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.3884,
       "prob_empate_elo": 0.2643,
       "prob_visitante_elo": 0.3473
@@ -329,10 +321,10 @@
       "local": "Côte d'Ivoire",
       "visitante": "Ecuador",
       "prob_local": 0.1953,
-      "prob_empate": 0.4512,
-      "prob_visitante": 0.3535,
+      "prob_empate": 0.4528,
+      "prob_visitante": 0.3519,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.2104,
       "prob_empate_elo": 0.1365,
       "prob_visitante_elo": 0.6531
@@ -344,14 +336,14 @@
       "grupo": "F",
       "local": "Sweden",
       "visitante": "Tunisia",
-      "prob_local": 0.375,
-      "prob_empate": 0.3031,
-      "prob_visitante": 0.3219,
+      "prob_local": 0.4863,
+      "prob_empate": 0.2737,
+      "prob_visitante": 0.24,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3655,
-      "prob_empate_elo": 0.2769,
-      "prob_visitante_elo": 0.3576
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3738,
+      "prob_empate_elo": 0.2723,
+      "prob_visitante_elo": 0.3539
     },
     {
       "id": "2026-06-15-Spain-CapeVerde",
@@ -360,14 +352,14 @@
       "grupo": "H",
       "local": "Spain",
       "visitante": "Cape Verde",
-      "prob_local": 0.79,
-      "prob_empate": 0.1515,
-      "prob_visitante": 0.0585,
-      "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.9303,
-      "prob_empate_elo": 0.0254,
-      "prob_visitante_elo": 0.0442
+      "prob_local": 0.8853,
+      "prob_empate": 0.0908,
+      "prob_visitante": 0.0238,
+      "marcador_probable": "3-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.9385,
+      "prob_empate_elo": 0.0224,
+      "prob_visitante_elo": 0.0391
     },
     {
       "id": "2026-06-15-Belgium-Egypt",
@@ -376,14 +368,14 @@
       "grupo": "G",
       "local": "Belgium",
       "visitante": "Egypt",
-      "prob_local": 0.4399,
-      "prob_empate": 0.3434,
-      "prob_visitante": 0.2167,
-      "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.5638,
-      "prob_empate_elo": 0.1766,
-      "prob_visitante_elo": 0.2596
+      "prob_local": 0.5279,
+      "prob_empate": 0.307,
+      "prob_visitante": 0.1651,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.5762,
+      "prob_empate_elo": 0.1708,
+      "prob_visitante_elo": 0.253
     },
     {
       "id": "2026-06-16-SaudiArabia-Uruguay",
@@ -392,11 +384,11 @@
       "grupo": "H",
       "local": "Saudi Arabia",
       "visitante": "Uruguay",
-      "prob_local": 0.1252,
-      "prob_empate": 0.3224,
-      "prob_visitante": 0.5524,
+      "prob_local": 0.1234,
+      "prob_empate": 0.3185,
+      "prob_visitante": 0.5582,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.1548,
       "prob_empate_elo": 0.0959,
       "prob_visitante_elo": 0.7493
@@ -408,14 +400,14 @@
       "grupo": "G",
       "local": "Iran",
       "visitante": "New Zealand",
-      "prob_local": 0.681,
-      "prob_empate": 0.2291,
-      "prob_visitante": 0.0899,
+      "prob_local": 0.6404,
+      "prob_empate": 0.2551,
+      "prob_visitante": 0.1045,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.5955,
-      "prob_empate_elo": 0.162,
-      "prob_visitante_elo": 0.2424
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.5983,
+      "prob_empate_elo": 0.1608,
+      "prob_visitante_elo": 0.2409
     },
     {
       "id": "2026-06-16-France-Senegal",
@@ -424,11 +416,11 @@
       "grupo": "I",
       "local": "France",
       "visitante": "Senegal",
-      "prob_local": 0.4734,
-      "prob_empate": 0.2755,
-      "prob_visitante": 0.2511,
+      "prob_local": 0.4893,
+      "prob_empate": 0.273,
+      "prob_visitante": 0.2376,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.6692,
       "prob_empate_elo": 0.1295,
       "prob_visitante_elo": 0.2013
@@ -440,11 +432,11 @@
       "grupo": "I",
       "local": "Iraq",
       "visitante": "Norway",
-      "prob_local": 0.0969,
-      "prob_empate": 0.2615,
-      "prob_visitante": 0.6416,
+      "prob_local": 0.0888,
+      "prob_empate": 0.2504,
+      "prob_visitante": 0.6608,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.2067,
       "prob_empate_elo": 0.1336,
       "prob_visitante_elo": 0.6597
@@ -456,14 +448,14 @@
       "grupo": "J",
       "local": "Argentina",
       "visitante": "Algeria",
-      "prob_local": 0.4702,
-      "prob_empate": 0.3622,
-      "prob_visitante": 0.1675,
+      "prob_local": 0.4734,
+      "prob_empate": 0.3693,
+      "prob_visitante": 0.1573,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7712,
-      "prob_empate_elo": 0.087,
-      "prob_visitante_elo": 0.1418
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.773,
+      "prob_empate_elo": 0.0862,
+      "prob_visitante_elo": 0.1407
     },
     {
       "id": "2026-06-17-Austria-Jordan",
@@ -472,11 +464,11 @@
       "grupo": "J",
       "local": "Austria",
       "visitante": "Jordan",
-      "prob_local": 0.6678,
-      "prob_empate": 0.2175,
-      "prob_visitante": 0.1147,
+      "prob_local": 0.6729,
+      "prob_empate": 0.2164,
+      "prob_visitante": 0.1107,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.4876,
       "prob_empate_elo": 0.2131,
       "prob_visitante_elo": 0.2994
@@ -488,14 +480,14 @@
       "grupo": "K",
       "local": "Portugal",
       "visitante": "DR Congo",
-      "prob_local": 0.4584,
-      "prob_empate": 0.3786,
-      "prob_visitante": 0.163,
+      "prob_local": 0.4444,
+      "prob_empate": 0.382,
+      "prob_visitante": 0.1736,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7801,
-      "prob_empate_elo": 0.0834,
-      "prob_visitante_elo": 0.1365
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.7817,
+      "prob_empate_elo": 0.0828,
+      "prob_visitante_elo": 0.1356
     },
     {
       "id": "2026-06-17-England-Croatia",
@@ -504,14 +496,14 @@
       "grupo": "L",
       "local": "England",
       "visitante": "Croatia",
-      "prob_local": 0.4797,
-      "prob_empate": 0.318,
-      "prob_visitante": 0.2023,
-      "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.5162,
-      "prob_empate_elo": 0.1991,
-      "prob_visitante_elo": 0.2847
+      "prob_local": 0.4607,
+      "prob_empate": 0.3379,
+      "prob_visitante": 0.2015,
+      "marcador_probable": "0-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.5191,
+      "prob_empate_elo": 0.1977,
+      "prob_visitante_elo": 0.2832
     },
     {
       "id": "2026-06-18-Ghana-Panama",
@@ -520,14 +512,14 @@
       "grupo": "L",
       "local": "Ghana",
       "visitante": "Panama",
-      "prob_local": 0.3982,
-      "prob_empate": 0.3053,
-      "prob_visitante": 0.2966,
+      "prob_local": 0.3787,
+      "prob_empate": 0.3087,
+      "prob_visitante": 0.3126,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.1905,
-      "prob_empate_elo": 0.1214,
-      "prob_visitante_elo": 0.688
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.1937,
+      "prob_empate_elo": 0.1238,
+      "prob_visitante_elo": 0.6825
     },
     {
       "id": "2026-06-18-Uzbekistan-Colombia",
@@ -536,13 +528,13 @@
       "grupo": "K",
       "local": "Uzbekistan",
       "visitante": "Colombia",
-      "prob_local": 0.133,
-      "prob_empate": 0.2591,
-      "prob_visitante": 0.6078,
+      "prob_local": 0.1288,
+      "prob_empate": 0.2557,
+      "prob_visitante": 0.6156,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.1958,
-      "prob_empate_elo": 0.1253,
+      "prob_empate_elo": 0.1254,
       "prob_visitante_elo": 0.6789
     },
     {
@@ -552,14 +544,14 @@
       "grupo": "A",
       "local": "Czechia",
       "visitante": "South Africa",
-      "prob_local": 0.5108,
-      "prob_empate": 0.2783,
-      "prob_visitante": 0.2109,
+      "prob_local": 0.4948,
+      "prob_empate": 0.2893,
+      "prob_visitante": 0.2159,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.5664,
-      "prob_empate_elo": 0.1754,
-      "prob_visitante_elo": 0.2582
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.5542,
+      "prob_empate_elo": 0.181,
+      "prob_visitante_elo": 0.2648
     },
     {
       "id": "2026-06-18-Switzerland-BosniaandHerzegovina",
@@ -568,14 +560,14 @@
       "grupo": "B",
       "local": "Switzerland",
       "visitante": "Bosnia and Herzegovina",
-      "prob_local": 0.6895,
-      "prob_empate": 0.2106,
-      "prob_visitante": 0.0999,
+      "prob_local": 0.6819,
+      "prob_empate": 0.2165,
+      "prob_visitante": 0.1016,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.767,
-      "prob_empate_elo": 0.0887,
-      "prob_visitante_elo": 0.1443
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.7617,
+      "prob_empate_elo": 0.0908,
+      "prob_visitante_elo": 0.1475
     },
     {
       "id": "2026-06-18-Canada-Qatar",
@@ -584,14 +576,14 @@
       "grupo": "B",
       "local": "Canada",
       "visitante": "Qatar",
-      "prob_local": 0.7584,
-      "prob_empate": 0.1849,
-      "prob_visitante": 0.0567,
+      "prob_local": 0.7706,
+      "prob_empate": 0.1801,
+      "prob_visitante": 0.0493,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7806,
-      "prob_empate_elo": 0.0832,
-      "prob_visitante_elo": 0.1362
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.7821,
+      "prob_empate_elo": 0.0826,
+      "prob_visitante_elo": 0.1353
     },
     {
       "id": "2026-06-19-Mexico-SouthKorea",
@@ -600,12 +592,12 @@
       "grupo": "A",
       "local": "Mexico",
       "visitante": "South Korea",
-      "prob_local": 0.4817,
-      "prob_empate": 0.3221,
-      "prob_visitante": 0.1962,
+      "prob_local": 0.4893,
+      "prob_empate": 0.3194,
+      "prob_visitante": 0.1913,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.5118,
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.5117,
       "prob_empate_elo": 0.2012,
       "prob_visitante_elo": 0.287
     },
@@ -616,14 +608,14 @@
       "grupo": "D",
       "local": "USA",
       "visitante": "Australia",
-      "prob_local": 0.2799,
-      "prob_empate": 0.2983,
-      "prob_visitante": 0.4218,
+      "prob_local": 0.266,
+      "prob_empate": 0.3038,
+      "prob_visitante": 0.4303,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3185,
-      "prob_empate_elo": 0.2324,
-      "prob_visitante_elo": 0.4491
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.313,
+      "prob_empate_elo": 0.2267,
+      "prob_visitante_elo": 0.4603
     },
     {
       "id": "2026-06-19-Scotland-Morocco",
@@ -632,14 +624,14 @@
       "grupo": "C",
       "local": "Scotland",
       "visitante": "Morocco",
-      "prob_local": 0.1237,
-      "prob_empate": 0.3222,
-      "prob_visitante": 0.5541,
+      "prob_local": 0.1619,
+      "prob_empate": 0.3437,
+      "prob_visitante": 0.4943,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.2443,
-      "prob_empate_elo": 0.1636,
-      "prob_visitante_elo": 0.5921
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2525,
+      "prob_empate_elo": 0.1704,
+      "prob_visitante_elo": 0.5771
     },
     {
       "id": "2026-06-20-Brazil-Haiti",
@@ -648,14 +640,14 @@
       "grupo": "C",
       "local": "Brazil",
       "visitante": "Haiti",
-      "prob_local": 0.8661,
-      "prob_empate": 0.0949,
-      "prob_visitante": 0.039,
+      "prob_local": 0.861,
+      "prob_empate": 0.0974,
+      "prob_visitante": 0.0416,
       "marcador_probable": "3-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.8093,
-      "prob_empate_elo": 0.0718,
-      "prob_visitante_elo": 0.119
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.8116,
+      "prob_empate_elo": 0.0708,
+      "prob_visitante_elo": 0.1175
     },
     {
       "id": "2026-06-20-Turkey-Paraguay",
@@ -664,14 +656,14 @@
       "grupo": "D",
       "local": "Turkey",
       "visitante": "Paraguay",
-      "prob_local": 0.3413,
-      "prob_empate": 0.321,
-      "prob_visitante": 0.3376,
+      "prob_local": 0.3429,
+      "prob_empate": 0.3207,
+      "prob_visitante": 0.3364,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.429,
-      "prob_empate_elo": 0.2427,
-      "prob_visitante_elo": 0.3282
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.4365,
+      "prob_empate_elo": 0.2389,
+      "prob_visitante_elo": 0.3247
     },
     {
       "id": "2026-06-20-Netherlands-Sweden",
@@ -680,11 +672,11 @@
       "grupo": "F",
       "local": "Netherlands",
       "visitante": "Sweden",
-      "prob_local": 0.6703,
-      "prob_empate": 0.1905,
-      "prob_visitante": 0.1392,
+      "prob_local": 0.6608,
+      "prob_empate": 0.1946,
+      "prob_visitante": 0.1446,
       "marcador_probable": "2-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.6944,
       "prob_empate_elo": 0.1187,
       "prob_visitante_elo": 0.1869
@@ -696,14 +688,14 @@
       "grupo": "E",
       "local": "Germany",
       "visitante": "Côte d'Ivoire",
-      "prob_local": 0.4788,
-      "prob_empate": 0.3027,
-      "prob_visitante": 0.2185,
-      "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.636,
-      "prob_empate_elo": 0.1439,
-      "prob_visitante_elo": 0.22
+      "prob_local": 0.4794,
+      "prob_empate": 0.3089,
+      "prob_visitante": 0.2117,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.6452,
+      "prob_empate_elo": 0.1399,
+      "prob_visitante_elo": 0.2149
     },
     {
       "id": "2026-06-20-Ecuador-Curacao",
@@ -712,14 +704,14 @@
       "grupo": "E",
       "local": "Ecuador",
       "visitante": "Curaçao",
-      "prob_local": 0.8548,
-      "prob_empate": 0.1252,
-      "prob_visitante": 0.0201,
+      "prob_local": 0.8143,
+      "prob_empate": 0.1571,
+      "prob_visitante": 0.0286,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.8549,
-      "prob_empate_elo": 0.054,
-      "prob_visitante_elo": 0.0912
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.8536,
+      "prob_empate_elo": 0.0545,
+      "prob_visitante_elo": 0.092
     },
     {
       "id": "2026-06-21-Tunisia-Japan",
@@ -728,14 +720,14 @@
       "grupo": "F",
       "local": "Tunisia",
       "visitante": "Japan",
-      "prob_local": 0.1023,
-      "prob_empate": 0.3348,
-      "prob_visitante": 0.5629,
+      "prob_local": 0.0717,
+      "prob_empate": 0.2703,
+      "prob_visitante": 0.658,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.1985,
-      "prob_empate_elo": 0.1274,
-      "prob_visitante_elo": 0.6741
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.1942,
+      "prob_empate_elo": 0.1242,
+      "prob_visitante_elo": 0.6816
     },
     {
       "id": "2026-06-21-Spain-SaudiArabia",
@@ -744,11 +736,11 @@
       "grupo": "H",
       "local": "Spain",
       "visitante": "Saudi Arabia",
-      "prob_local": 0.8363,
-      "prob_empate": 0.1263,
-      "prob_visitante": 0.0375,
+      "prob_local": 0.8371,
+      "prob_empate": 0.1259,
+      "prob_visitante": 0.037,
       "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.922,
       "prob_empate_elo": 0.0285,
       "prob_visitante_elo": 0.0495
@@ -760,14 +752,14 @@
       "grupo": "G",
       "local": "Belgium",
       "visitante": "Iran",
-      "prob_local": 0.424,
-      "prob_empate": 0.2976,
-      "prob_visitante": 0.2784,
+      "prob_local": 0.5111,
+      "prob_empate": 0.2749,
+      "prob_visitante": 0.214,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.4052,
-      "prob_empate_elo": 0.2553,
-      "prob_visitante_elo": 0.3395
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.4138,
+      "prob_empate_elo": 0.2507,
+      "prob_visitante_elo": 0.3355
     },
     {
       "id": "2026-06-21-Uruguay-CapeVerde",
@@ -776,14 +768,14 @@
       "grupo": "H",
       "local": "Uruguay",
       "visitante": "Cape Verde",
-      "prob_local": 0.494,
-      "prob_empate": 0.3352,
-      "prob_visitante": 0.1708,
+      "prob_local": 0.6229,
+      "prob_empate": 0.2794,
+      "prob_visitante": 0.0977,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7719,
-      "prob_empate_elo": 0.0867,
-      "prob_visitante_elo": 0.1414
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.795,
+      "prob_empate_elo": 0.0774,
+      "prob_visitante_elo": 0.1276
     },
     {
       "id": "2026-06-22-NewZealand-Egypt",
@@ -792,14 +784,14 @@
       "grupo": "G",
       "local": "New Zealand",
       "visitante": "Egypt",
-      "prob_local": 0.1214,
-      "prob_empate": 0.3294,
-      "prob_visitante": 0.5492,
+      "prob_local": 0.1379,
+      "prob_empate": 0.3501,
+      "prob_visitante": 0.5119,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3241,
-      "prob_empate_elo": 0.2383,
-      "prob_visitante_elo": 0.4377
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3246,
+      "prob_empate_elo": 0.2388,
+      "prob_visitante_elo": 0.4366
     },
     {
       "id": "2026-06-22-Argentina-Austria",
@@ -808,14 +800,14 @@
       "grupo": "J",
       "local": "Argentina",
       "visitante": "Austria",
-      "prob_local": 0.4672,
-      "prob_empate": 0.3677,
-      "prob_visitante": 0.1651,
+      "prob_local": 0.4657,
+      "prob_empate": 0.377,
+      "prob_visitante": 0.1573,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.7713,
-      "prob_empate_elo": 0.0869,
-      "prob_visitante_elo": 0.1417
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.7731,
+      "prob_empate_elo": 0.0862,
+      "prob_visitante_elo": 0.1407
     },
     {
       "id": "2026-06-22-France-Iraq",
@@ -824,11 +816,11 @@
       "grupo": "I",
       "local": "France",
       "visitante": "Iraq",
-      "prob_local": 0.642,
-      "prob_empate": 0.2592,
-      "prob_visitante": 0.0988,
+      "prob_local": 0.6572,
+      "prob_empate": 0.2513,
+      "prob_visitante": 0.0916,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.8442,
       "prob_empate_elo": 0.0581,
       "prob_visitante_elo": 0.0977
@@ -840,11 +832,11 @@
       "grupo": "I",
       "local": "Norway",
       "visitante": "Senegal",
-      "prob_local": 0.4765,
-      "prob_empate": 0.2782,
-      "prob_visitante": 0.2453,
+      "prob_local": 0.4961,
+      "prob_empate": 0.2735,
+      "prob_visitante": 0.2304,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.4127,
       "prob_empate_elo": 0.2513,
       "prob_visitante_elo": 0.336
@@ -856,11 +848,11 @@
       "grupo": "J",
       "local": "Jordan",
       "visitante": "Algeria",
-      "prob_local": 0.1121,
-      "prob_empate": 0.2103,
-      "prob_visitante": 0.6777,
+      "prob_local": 0.1104,
+      "prob_empate": 0.211,
+      "prob_visitante": 0.6786,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.2993,
       "prob_empate_elo": 0.213,
       "prob_visitante_elo": 0.4877
@@ -872,14 +864,14 @@
       "grupo": "K",
       "local": "Portugal",
       "visitante": "Uzbekistan",
-      "prob_local": 0.6402,
-      "prob_empate": 0.2586,
-      "prob_visitante": 0.1012,
+      "prob_local": 0.6372,
+      "prob_empate": 0.2611,
+      "prob_visitante": 0.1017,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.6964,
-      "prob_empate_elo": 0.1179,
-      "prob_visitante_elo": 0.1857
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.6984,
+      "prob_empate_elo": 0.117,
+      "prob_visitante_elo": 0.1845
     },
     {
       "id": "2026-06-23-England-Ghana",
@@ -888,14 +880,14 @@
       "grupo": "L",
       "local": "England",
       "visitante": "Ghana",
-      "prob_local": 0.7001,
-      "prob_empate": 0.2246,
-      "prob_visitante": 0.0753,
+      "prob_local": 0.6879,
+      "prob_empate": 0.2381,
+      "prob_visitante": 0.074,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.8798,
-      "prob_empate_elo": 0.0444,
-      "prob_visitante_elo": 0.0758
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.881,
+      "prob_empate_elo": 0.0439,
+      "prob_visitante_elo": 0.075
     },
     {
       "id": "2026-06-23-Panama-Croatia",
@@ -904,14 +896,14 @@
       "grupo": "L",
       "local": "Panama",
       "visitante": "Croatia",
-      "prob_local": 0.1127,
-      "prob_empate": 0.2111,
-      "prob_visitante": 0.6763,
+      "prob_local": 0.1162,
+      "prob_empate": 0.218,
+      "prob_visitante": 0.6658,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.2877,
-      "prob_empate_elo": 0.2019,
-      "prob_visitante_elo": 0.5104
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2843,
+      "prob_empate_elo": 0.1987,
+      "prob_visitante_elo": 0.517
     },
     {
       "id": "2026-06-24-Colombia-DRCongo",
@@ -920,11 +912,11 @@
       "grupo": "K",
       "local": "Colombia",
       "visitante": "DR Congo",
-      "prob_local": 0.4267,
-      "prob_empate": 0.3644,
-      "prob_visitante": 0.2089,
+      "prob_local": 0.4205,
+      "prob_empate": 0.3626,
+      "prob_visitante": 0.217,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.7659,
       "prob_empate_elo": 0.0891,
       "prob_visitante_elo": 0.145
@@ -936,14 +928,14 @@
       "grupo": "B",
       "local": "Switzerland",
       "visitante": "Canada",
-      "prob_local": 0.4435,
-      "prob_empate": 0.3284,
-      "prob_visitante": 0.2282,
-      "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.4234,
-      "prob_empate_elo": 0.2457,
-      "prob_visitante_elo": 0.3309
+      "prob_local": 0.4349,
+      "prob_empate": 0.3311,
+      "prob_visitante": 0.234,
+      "marcador_probable": "0-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.4224,
+      "prob_empate_elo": 0.2462,
+      "prob_visitante_elo": 0.3314
     },
     {
       "id": "2026-06-24-BosniaandHerzegovina-Qatar",
@@ -952,14 +944,14 @@
       "grupo": "B",
       "local": "Bosnia and Herzegovina",
       "visitante": "Qatar",
-      "prob_local": 0.611,
-      "prob_empate": 0.2485,
-      "prob_visitante": 0.1405,
+      "prob_local": 0.6217,
+      "prob_empate": 0.2518,
+      "prob_visitante": 0.1265,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.4433,
-      "prob_empate_elo": 0.2353,
-      "prob_visitante_elo": 0.3213
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.4521,
+      "prob_empate_elo": 0.2308,
+      "prob_visitante_elo": 0.317
     },
     {
       "id": "2026-06-24-Scotland-Brazil",
@@ -968,14 +960,14 @@
       "grupo": "C",
       "local": "Scotland",
       "visitante": "Brazil",
-      "prob_local": 0.1487,
-      "prob_empate": 0.2138,
-      "prob_visitante": 0.6375,
-      "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.1816,
-      "prob_empate_elo": 0.1149,
-      "prob_visitante_elo": 0.7036
+      "prob_local": 0.2036,
+      "prob_empate": 0.2316,
+      "prob_visitante": 0.5648,
+      "marcador_probable": "1-1",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.1871,
+      "prob_empate_elo": 0.1189,
+      "prob_visitante_elo": 0.694
     },
     {
       "id": "2026-06-24-Morocco-Haiti",
@@ -984,11 +976,11 @@
       "grupo": "C",
       "local": "Morocco",
       "visitante": "Haiti",
-      "prob_local": 0.7624,
-      "prob_empate": 0.1914,
-      "prob_visitante": 0.0462,
-      "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "prob_local": 0.7485,
+      "prob_empate": 0.2013,
+      "prob_visitante": 0.0502,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.7234,
       "prob_empate_elo": 0.1066,
       "prob_visitante_elo": 0.17
@@ -1000,11 +992,11 @@
       "grupo": "A",
       "local": "Czechia",
       "visitante": "Mexico",
-      "prob_local": 0.1847,
-      "prob_empate": 0.287,
-      "prob_visitante": 0.5283,
+      "prob_local": 0.1799,
+      "prob_empate": 0.2869,
+      "prob_visitante": 0.5331,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.2237,
       "prob_empate_elo": 0.1468,
       "prob_visitante_elo": 0.6295
@@ -1016,14 +1008,14 @@
       "grupo": "A",
       "local": "South Africa",
       "visitante": "South Korea",
-      "prob_local": 0.1949,
-      "prob_empate": 0.2996,
-      "prob_visitante": 0.5055,
+      "prob_local": 0.1999,
+      "prob_empate": 0.3088,
+      "prob_visitante": 0.4914,
       "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.196,
-      "prob_empate_elo": 0.1255,
-      "prob_visitante_elo": 0.6785
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2021,
+      "prob_empate_elo": 0.1301,
+      "prob_visitante_elo": 0.6678
     },
     {
       "id": "2026-06-25-Ecuador-Germany",
@@ -1032,14 +1024,14 @@
       "grupo": "E",
       "local": "Ecuador",
       "visitante": "Germany",
-      "prob_local": 0.31,
-      "prob_empate": 0.3611,
-      "prob_visitante": 0.329,
+      "prob_local": 0.3005,
+      "prob_empate": 0.3664,
+      "prob_visitante": 0.3331,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3779,
-      "prob_empate_elo": 0.27,
-      "prob_visitante_elo": 0.352
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3683,
+      "prob_empate_elo": 0.2754,
+      "prob_visitante_elo": 0.3563
     },
     {
       "id": "2026-06-25-Curacao-CotedIvoire",
@@ -1048,14 +1040,14 @@
       "grupo": "E",
       "local": "Curaçao",
       "visitante": "Côte d'Ivoire",
-      "prob_local": 0.0351,
-      "prob_empate": 0.1448,
-      "prob_visitante": 0.8201,
+      "prob_local": 0.0495,
+      "prob_empate": 0.1811,
+      "prob_visitante": 0.7694,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.214,
-      "prob_empate_elo": 0.1392,
-      "prob_visitante_elo": 0.6467
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2154,
+      "prob_empate_elo": 0.1403,
+      "prob_visitante_elo": 0.6442
     },
     {
       "id": "2026-06-25-Japan-Sweden",
@@ -1064,11 +1056,11 @@
       "grupo": "F",
       "local": "Japan",
       "visitante": "Sweden",
-      "prob_local": 0.6662,
-      "prob_empate": 0.2285,
-      "prob_visitante": 0.1053,
-      "marcador_probable": "2-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "prob_local": 0.6599,
+      "prob_empate": 0.2327,
+      "prob_visitante": 0.1074,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.6691,
       "prob_empate_elo": 0.1296,
       "prob_visitante_elo": 0.2014
@@ -1080,14 +1072,14 @@
       "grupo": "F",
       "local": "Tunisia",
       "visitante": "Netherlands",
-      "prob_local": 0.1351,
-      "prob_empate": 0.2776,
-      "prob_visitante": 0.5873,
-      "marcador_probable": "0-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.1841,
-      "prob_empate_elo": 0.1167,
-      "prob_visitante_elo": 0.6992
+      "prob_local": 0.0916,
+      "prob_empate": 0.2193,
+      "prob_visitante": 0.6891,
+      "marcador_probable": "0-2",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.1799,
+      "prob_empate_elo": 0.1137,
+      "prob_visitante_elo": 0.7064
     },
     {
       "id": "2026-06-26-Turkey-USA",
@@ -1096,14 +1088,14 @@
       "grupo": "D",
       "local": "Turkey",
       "visitante": "USA",
-      "prob_local": 0.556,
-      "prob_empate": 0.2353,
-      "prob_visitante": 0.2087,
+      "prob_local": 0.54,
+      "prob_empate": 0.2429,
+      "prob_visitante": 0.2171,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.5029,
-      "prob_empate_elo": 0.2055,
-      "prob_visitante_elo": 0.2916
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.5205,
+      "prob_empate_elo": 0.197,
+      "prob_visitante_elo": 0.2825
     },
     {
       "id": "2026-06-26-Paraguay-Australia",
@@ -1112,14 +1104,14 @@
       "grupo": "D",
       "local": "Paraguay",
       "visitante": "Australia",
-      "prob_local": 0.3871,
-      "prob_empate": 0.3609,
-      "prob_visitante": 0.252,
+      "prob_local": 0.3639,
+      "prob_empate": 0.3669,
+      "prob_visitante": 0.2692,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3526,
-      "prob_empate_elo": 0.2707,
-      "prob_visitante_elo": 0.3767
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3521,
+      "prob_empate_elo": 0.2702,
+      "prob_visitante_elo": 0.3777
     },
     {
       "id": "2026-06-26-Norway-France",
@@ -1128,11 +1120,11 @@
       "grupo": "I",
       "local": "Norway",
       "visitante": "France",
-      "prob_local": 0.3579,
-      "prob_empate": 0.2962,
-      "prob_visitante": 0.3459,
+      "prob_local": 0.3605,
+      "prob_empate": 0.2955,
+      "prob_visitante": 0.344,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.229,
       "prob_empate_elo": 0.1511,
       "prob_visitante_elo": 0.6199
@@ -1144,11 +1136,11 @@
       "grupo": "I",
       "local": "Senegal",
       "visitante": "Iraq",
-      "prob_local": 0.5465,
-      "prob_empate": 0.3025,
-      "prob_visitante": 0.1511,
+      "prob_local": 0.5479,
+      "prob_empate": 0.3026,
+      "prob_visitante": 0.1494,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.6098,
       "prob_empate_elo": 0.1556,
       "prob_visitante_elo": 0.2346
@@ -1160,14 +1152,14 @@
       "grupo": "H",
       "local": "Cape Verde",
       "visitante": "Spain",
-      "prob_local": 0.0585,
-      "prob_empate": 0.1515,
-      "prob_visitante": 0.79,
-      "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.0442,
-      "prob_empate_elo": 0.0254,
-      "prob_visitante_elo": 0.9303
+      "prob_local": 0.0238,
+      "prob_empate": 0.0908,
+      "prob_visitante": 0.8853,
+      "marcador_probable": "0-3",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.0391,
+      "prob_empate_elo": 0.0224,
+      "prob_visitante_elo": 0.9385
     },
     {
       "id": "2026-06-26-Uruguay-SaudiArabia",
@@ -1176,11 +1168,11 @@
       "grupo": "H",
       "local": "Uruguay",
       "visitante": "Saudi Arabia",
-      "prob_local": 0.5524,
-      "prob_empate": 0.3224,
-      "prob_visitante": 0.1252,
+      "prob_local": 0.5582,
+      "prob_empate": 0.3185,
+      "prob_visitante": 0.1234,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.7493,
       "prob_empate_elo": 0.0959,
       "prob_visitante_elo": 0.1548
@@ -1192,14 +1184,14 @@
       "grupo": "G",
       "local": "Egypt",
       "visitante": "Iran",
-      "prob_local": 0.2615,
-      "prob_empate": 0.3813,
-      "prob_visitante": 0.3572,
+      "prob_local": 0.2605,
+      "prob_empate": 0.3719,
+      "prob_visitante": 0.3676,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.2843,
-      "prob_empate_elo": 0.1987,
-      "prob_visitante_elo": 0.5171
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2822,
+      "prob_empate_elo": 0.1967,
+      "prob_visitante_elo": 0.5211
     },
     {
       "id": "2026-06-27-NewZealand-Belgium",
@@ -1208,14 +1200,14 @@
       "grupo": "G",
       "local": "New Zealand",
       "visitante": "Belgium",
-      "prob_local": 0.0587,
-      "prob_empate": 0.1654,
-      "prob_visitante": 0.7759,
+      "prob_local": 0.0466,
+      "prob_empate": 0.1496,
+      "prob_visitante": 0.8038,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.2181,
-      "prob_empate_elo": 0.1424,
-      "prob_visitante_elo": 0.6395
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.2122,
+      "prob_empate_elo": 0.1378,
+      "prob_visitante_elo": 0.65
     },
     {
       "id": "2026-06-27-Panama-England",
@@ -1224,14 +1216,14 @@
       "grupo": "L",
       "local": "Panama",
       "visitante": "England",
-      "prob_local": 0.0525,
-      "prob_empate": 0.1587,
-      "prob_visitante": 0.7888,
+      "prob_local": 0.0576,
+      "prob_empate": 0.1795,
+      "prob_visitante": 0.763,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.2057,
-      "prob_empate_elo": 0.1328,
-      "prob_visitante_elo": 0.6615
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.201,
+      "prob_empate_elo": 0.1293,
+      "prob_visitante_elo": 0.6698
     },
     {
       "id": "2026-06-27-Croatia-Ghana",
@@ -1240,11 +1232,11 @@
       "grupo": "L",
       "local": "Croatia",
       "visitante": "Ghana",
-      "prob_local": 0.5831,
-      "prob_empate": 0.2707,
-      "prob_visitante": 0.1462,
+      "prob_local": 0.5907,
+      "prob_empate": 0.2702,
+      "prob_visitante": 0.1391,
       "marcador_probable": "1-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.7996,
       "prob_empate_elo": 0.0756,
       "prob_visitante_elo": 0.1248
@@ -1256,14 +1248,14 @@
       "grupo": "K",
       "local": "Colombia",
       "visitante": "Portugal",
-      "prob_local": 0.2881,
-      "prob_empate": 0.2678,
-      "prob_visitante": 0.4441,
+      "prob_local": 0.2961,
+      "prob_empate": 0.2711,
+      "prob_visitante": 0.4328,
       "marcador_probable": "1-1",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.3512,
-      "prob_empate_elo": 0.269,
-      "prob_visitante_elo": 0.3798
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.3501,
+      "prob_empate_elo": 0.2678,
+      "prob_visitante_elo": 0.3821
     },
     {
       "id": "2026-06-28-DRCongo-Uzbekistan",
@@ -1272,11 +1264,11 @@
       "grupo": "K",
       "local": "DR Congo",
       "visitante": "Uzbekistan",
-      "prob_local": 0.3384,
-      "prob_empate": 0.4726,
-      "prob_visitante": 0.1889,
+      "prob_local": 0.3555,
+      "prob_empate": 0.4628,
+      "prob_visitante": 0.1817,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.3083,
       "prob_empate_elo": 0.2219,
       "prob_visitante_elo": 0.4698
@@ -1288,11 +1280,11 @@
       "grupo": "J",
       "local": "Algeria",
       "visitante": "Austria",
-      "prob_local": 0.32,
-      "prob_empate": 0.3653,
-      "prob_visitante": 0.3147,
+      "prob_local": 0.3144,
+      "prob_empate": 0.3689,
+      "prob_visitante": 0.3167,
       "marcador_probable": "0-0",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
       "prob_local_elo": 0.3601,
       "prob_empate_elo": 0.2799,
       "prob_visitante_elo": 0.3599
@@ -1304,14 +1296,14 @@
       "grupo": "J",
       "local": "Jordan",
       "visitante": "Argentina",
-      "prob_local": 0.041,
-      "prob_empate": 0.142,
-      "prob_visitante": 0.817,
+      "prob_local": 0.0379,
+      "prob_empate": 0.1425,
+      "prob_visitante": 0.8196,
       "marcador_probable": "0-2",
-      "fecha_prediccion": "2026-06-07T04:35:19Z",
-      "prob_local_elo": 0.0956,
-      "prob_empate_elo": 0.0568,
-      "prob_visitante_elo": 0.8476
+      "fecha_prediccion": "2026-06-07T07:31:40Z",
+      "prob_local_elo": 0.0948,
+      "prob_empate_elo": 0.0563,
+      "prob_visitante_elo": 0.8489
     }
   ]
 }
