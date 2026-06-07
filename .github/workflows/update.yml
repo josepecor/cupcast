@@ -2,10 +2,9 @@ name: Update predictions
 
 # Ejecuta el pipeline diario y despliega GitHub Pages.
 #
-# Frecuencia:
-#   - Base: 6:00 y 23:00 UTC todos los días
-#   - Cada 3 horas durante el Mundial (Jun 11 – Jul 22) para no perder
-#     resultados de la tarde europea / noche americana
+# Frecuencia: una vez al día a las 6:00 UTC.
+# Los partidos del Mundial 2026 son en Norteamérica; el último acaba ~03:00 UTC,
+# así que a las 6:00 UTC todos los resultados del día anterior están disponibles.
 #
 # Nota: los crons de Actions son best-effort (+/- 30 min habitual) y se
 # desactivan solos si el repo no tiene actividad ~60 días. El guard de
@@ -13,9 +12,7 @@ name: Update predictions
 
 on:
   schedule:
-    - cron: '0 6 * * *'           # diario 6:00 UTC
-    - cron: '0 23 * * *'          # diario 23:00 UTC (post-resultados)
-    - cron: '0 */3 * 6-7 *'       # cada 3h en junio-julio (torneo)
+    - cron: '0 6 * * *'           # diario 6:00 UTC (post-resultados Norteamérica)
   workflow_dispatch:               # disparo manual desde la UI de Actions
 
 permissions:
