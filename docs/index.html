@@ -22,6 +22,11 @@
     </div>
   </header>
 
+  <div class="disclaimer-banner">
+    <span class="disclaimer-icon">&#9432;</span>
+    Proyecto divulgativo de modelado estadístico. Las probabilidades mostradas son estimaciones de un modelo matemático y <strong>no constituyen pronósticos infalibles ni recomendaciones de ningún tipo</strong>. No apto para apuestas ni decisiones económicas.
+  </div>
+
   <main>
 
     <div id="loading" class="loading-state">Cargando predicciones</div>
@@ -39,14 +44,14 @@
       <div id="partidos-container"></div>
     </section>
 
-    <!-- ── Track record (oculto hasta que haya resultados) ────────── -->
+    <!-- ── Resultados del modelo (oculto hasta que haya resultados) ── -->
     <section id="sec-track" class="hidden">
-      <h2>Track record en vivo</h2>
+      <h2>Seguimiento en vivo</h2>
       <p class="section-note">Predicciones congeladas antes del partido, puntuadas al resolverse</p>
+      <div id="track-tabla"></div>
+      <div class="track-separator"></div>
       <div id="track-metricas" class="metricas-grid"></div>
       <div id="track-calibracion"></div>
-      <h3 id="track-partidos-title">Partidos resueltos</h3>
-      <div id="track-tabla"></div>
     </section>
 
     <!-- ── Backtest histórico ─────────────────────────────────────── -->
@@ -64,9 +69,24 @@
   </main>
 
   <footer>
-    <p>Modelo Dixon-Coles con decaimiento temporal · Baseline Elo · Datos históricos: <a href="https://github.com/martj42/international_results" target="_blank">martj42/international_results</a> · Calendario: Football data provided by the <a href="https://www.football-data.org" target="_blank">Football-Data.org API</a> · Banderas: <a href="https://flagpedia.net" target="_blank">Flagpedia</a></p>
+    <p class="footer-links">
+      <span class="footer-item">Código fuente: <a href="https://github.com/josepecor/cupcast" target="_blank">github.com/josepecor/cupcast</a></span><span class="footer-sep">&nbsp;·&nbsp;</span>
+      <span class="footer-item">Modelo: Dixon-Coles con decaimiento temporal · Baseline Elo</span><span class="footer-sep">&nbsp;·&nbsp;</span>
+      <span class="footer-item">Datos: <a href="https://github.com/martj42/international_results" target="_blank">martj42/international_results</a></span><span class="footer-sep">&nbsp;·&nbsp;</span>
+      <span class="footer-item">Calendario: <a href="https://www.football-data.org" target="_blank">Football-Data.org</a></span><span class="footer-sep">&nbsp;·&nbsp;</span>
+      <span class="footer-item">Banderas: <a href="https://flagpedia.net" target="_blank">Flagpedia</a></span>
+    </p>
   </footer>
 
+  <!-- ── Modal detalle partido ────────────────────────────────────────── -->
+  <div id="match-modal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Cerrar">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
