@@ -134,14 +134,29 @@ def test_append_and_load(live_preds, results_df):
     assert loaded[0]["id"] == "2026-06-11-Spain-Germany"
 
 
-def test_append_is_additive(live_preds, results_df):
-    """Dos llamadas a append acumulan, no sobreescriben."""
+def test_append_is_additive(live_preds):
+    """Partidos distintos se acumulan en el JSONL."""
+    pred_a = [{**live_preds[0], "id": "2026-06-11-Spain-Germany",
+               "goles_local": 2, "goles_visitante": 1, "ganador": "local",
+               "log_loss": 0.9, "brier": 0.5, "acertado": True, "sorpresa": False, "resultado": "2-1"}]
+    pred_b = [{**live_preds[1], "id": "2026-06-12-France-Belgium",
+               "goles_local": 1, "goles_visitante": 0, "ganador": "local",
+               "log_loss": 0.8, "brier": 0.4, "acertado": True, "sorpresa": False, "resultado": "1-0"}]
+    with tempfile.TemporaryDirectory() as tmp:
+        fm = FreezeManager(tmp)
+        fm.append(pred_a)
+        fm.append(pred_b)
+        assert len(fm.load()) == 2
+
+
+def test_append_dedup(live_preds, results_df):
+    """El mismo ID no se añade dos veces aunque append() se llame dos veces."""
     with tempfile.TemporaryDirectory() as tmp:
         fm = FreezeManager(tmp)
         resolved, _ = fm.resolve(live_preds, results_df)
         fm.append(resolved)
-        fm.append(resolved)   # segunda vez
-        assert len(fm.load()) == 2
+        fm.append(resolved)
+        assert len(fm.load()) == 1
 
 
 def test_write_json_creates_file(live_preds, results_df):
