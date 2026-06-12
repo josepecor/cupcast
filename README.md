@@ -76,7 +76,8 @@ cd docs && python3 -m http.server 8080
 
 ```
 src/
-├── data.py       # Descarga y limpieza del histórico; anti-leakage por fecha
+├── data.py       # Descarga y limpieza del histórico (martj42); anti-leakage por fecha
+├── schedule.py   # Descarga el calendario WC 2026 desde football-data.org
 ├── model.py      # Dixon-Coles: ajuste y predicción partido a partido
 ├── elo.py        # Baseline Elo adaptado al fútbol
 ├── evaluate.py   # Log-loss, Brier score, calibración
@@ -86,28 +87,31 @@ src/
 
 data/
 ├── wc2026_groups.json    # Grupos oficiales FIFA 2026
-└── wc2026_schedule.json  # 72 partidos de grupos + 31 eliminatorias TBD
+└── wc2026_schedule.json  # 104 partidos (72 grupos + 32 eliminatorias); incluye resultados cuando están disponibles
 
 docs/                     # Raíz de GitHub Pages
 ├── index.html / app.js / styles.css
 ├── predictions.json      # Predicciones actuales (regenerado a diario)
-├── backtest.json         # Validación histórica (estático)
-└── track_record.json     # Predicciones resueltas con puntuación
+├── track_record.jsonl    # Log append-only de predicciones resueltas (fuente de verdad)
+├── track_record.json     # Track record agregado para el frontend (generado desde el JSONL)
+└── backtest.json         # Validación histórica (estático)
 ```
 
 El flujo de datos es estrictamente unidireccional:  
-`data.py → model.py / elo.py → simulate.py → freeze.py → pipeline.py → docs/`
+`data.py + schedule.py → model.py / elo.py → simulate.py → freeze.py → pipeline.py → docs/`
 
 ---
 
 ## Actualización automática
 
-GitHub Actions ejecuta el pipeline diariamente (6:00 y 23:00 UTC) y cada 3 horas durante el torneo (junio–julio). Los JSONs actualizados se despliegan automáticamente en GitHub Pages.
+GitHub Actions ejecuta el pipeline diariamente a las **9:00 UTC** (después de que `martj42/international_results` actualiza sus resultados, entre las 05:00–08:30 UTC). Los JSONs actualizados se despliegan automáticamente en GitHub Pages.
+
+CI corre en cada push: tests, lint y regeneración del backtest para verificar reproducibilidad.
 
 ---
 
 ## Fuentes
 
-- Datos históricos: [martj42/international_results](https://github.com/martj42/international_results)
+- Datos históricos (entrenamiento): [martj42/international_results](https://github.com/martj42/international_results) — ~49.000 partidos internacionales, actualizado diariamente
+- Calendario en vivo (fixtures + resultados WC 2026): [football-data.org](https://www.football-data.org) — plan gratuito, vía `src/schedule.py`
 - Banderas: [Flagpedia / flagcdn.com](https://flagpedia.net)
-- Calendario oficial: FIFA / ESPN
