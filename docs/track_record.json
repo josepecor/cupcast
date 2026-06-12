@@ -1,10 +1,60 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "actualizado": "2026-06-12T07:51:41Z",
-    "partidos_resueltos": 0
+    "actualizado": "2026-06-12T08:58:26Z",
+    "partidos_resueltos": 1
   },
-  "agregados": null,
-  "calibracion": [],
-  "partidos": []
+  "agregados": {
+    "log_loss": 0.467,
+    "brier": 0.2229,
+    "hit_rate": 1.0,
+    "baseline_log_loss": 0.2416,
+    "baseline_brier": 0.0704
+  },
+  "calibracion": [
+    {
+      "bucket": "0.1-0.2",
+      "predicho": 0.103,
+      "observado": 0.0,
+      "n": 1
+    },
+    {
+      "bucket": "0.2-0.3",
+      "predicho": 0.27,
+      "observado": 0.0,
+      "n": 1
+    },
+    {
+      "bucket": "0.6-0.7",
+      "predicho": 0.627,
+      "observado": 1.0,
+      "n": 1
+    }
+  ],
+  "partidos": [
+    {
+      "id": "2026-06-11-Mexico-South-Africa",
+      "fecha": "2026-06-11T19:00:00Z",
+      "fase": "grupos",
+      "grupo": "A",
+      "local": "Mexico",
+      "visitante": "South Africa",
+      "prob_local": 0.6269,
+      "prob_empate": 0.2704,
+      "prob_visitante": 0.1027,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-10T07:43:43Z",
+      "prob_local_elo": 0.7854,
+      "prob_empate_elo": 0.0813,
+      "prob_visitante_elo": 0.1333,
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "resultado": "2-0",
+      "ganador": "local",
+      "log_loss": 0.467,
+      "brier": 0.2229,
+      "acertado": true,
+      "sorpresa": false
+    }
+  ]
 }
