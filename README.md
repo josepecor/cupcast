@@ -30,15 +30,15 @@ Antes de cada partido se congela la predicción. Al conocerse el resultado se pu
 
 ## Validación histórica (backtest WC 2010–2022)
 
-| Torneo | DC log-loss | Elo log-loss | DC Brier | Elo Brier |
-|---|---|---|---|---|
-| WC 2010 | **0.933** | 0.989 | **0.549** | 0.580 |
-| WC 2014 | **0.934** | 0.959 | **0.554** | 0.563 |
-| WC 2018 | **0.978** | 0.997 | **0.579** | 0.589 |
-| WC 2022 | 1.078 | **1.031** | 0.622 | **0.612** |
-| **Global** | **0.981** | 0.994 | **0.576** | 0.586 |
+| Torneo | DC log-loss | Elo log-loss | DC Brier | Elo Brier | DC hit rate | Elo hit rate |
+|---|---|---|---|---|---|---|
+| WC 2010 | **0.933** | 0.989 | **0.549** | 0.580 | **57.8%** | 53.1% |
+| WC 2014 | **0.934** | 0.959 | **0.554** | 0.563 | 54.7% | **57.8%** |
+| WC 2018 | **0.978** | 0.997 | **0.579** | 0.589 | **54.7%** | 53.1% |
+| WC 2022 | 1.078 | **1.031** | 0.622 | **0.612** | 46.9% | **56.2%** |
+| **Global** | **0.981** | 0.994 | **0.576** | 0.586 | 53.5% | **55.1%** |
 
-Dixon-Coles supera al Elo en 3 de 4 torneos y en el global. WC 2022 es el único outlier (probable sesgo de Argentina/Brasil en qualifiers CONMEBOL). Los modelos se entrenaron estrictamente con datos anteriores a cada torneo (anti-leakage por fecha exacta).
+Dixon-Coles supera al Elo en log-loss y Brier en 3 de 4 torneos y en el global — las métricas probabilísticas que realmente importan. El hit rate (% de veces que ganó el resultado más probable) es más ruidoso: el Elo lo gana en el global (55.1% vs 53.5%), pero esto refleja que el Elo tiende a predecir favoritos más marcados. Los modelos se entrenaron estrictamente con datos anteriores a cada torneo (anti-leakage por fecha exacta).
 
 ---
 
@@ -48,17 +48,21 @@ Dixon-Coles supera al Elo en 3 de 4 torneos y en el global. WC 2022 es el único
 # Instalar dependencias
 pip install -r requirements.txt
 
+# Variable de entorno opcional: actualiza el calendario desde football-data.org
+# Sin ella el pipeline usa el wc2026_schedule.json cacheado en el repo
+export FOOTBALL_DATA_API_KEY=tu_clave   # registro gratuito en football-data.org
+
 # Descargar datos históricos (~3.6 MB)
-python src/data.py
+python3 src/data.py
 
 # Pipeline completo (descarga → reentrenar → predecir → escribir JSONs)
-python src/pipeline.py
+python3 src/pipeline.py
 
 # Simular con menos iteraciones (más rápido para desarrollo)
-python src/pipeline.py --n-simulations 1000
+python3 src/pipeline.py --n-simulations 1000
 
 # Solo regenerar backtest
-python src/pipeline.py --backtest-only
+python3 src/pipeline.py --backtest-only
 
 # Tests
 pytest tests/ -v
@@ -87,7 +91,10 @@ src/
 
 data/
 ├── wc2026_groups.json    # Grupos oficiales FIFA 2026
-└── wc2026_schedule.json  # 104 partidos (72 grupos + 32 eliminatorias); incluye resultados cuando están disponibles
+├── wc2026_schedule.json  # 104 partidos (72 grupos + 32 eliminatorias); incluye resultados cuando están disponibles
+└── raw/                  # gitignoreado — descargado automáticamente por data.py
+
+outputs/                  # gitignoreado — figuras generadas (calibración, etc.)
 
 docs/                     # Raíz de GitHub Pages
 ├── index.html / app.js / styles.css
