@@ -165,10 +165,14 @@ class FreezeManager:
     # ------------------------------------------------------------------
 
     def append(self, resolved: list[dict]) -> None:
-        """Añade predicciones resueltas al JSONL. Cada llamada es atómica por partido."""
+        """Añade predicciones resueltas al JSONL. Ignora IDs ya presentes (dedup)."""
+        existing_ids = {r["id"] for r in self.load()}
+        new_records = [r for r in resolved if r["id"] not in existing_ids]
+        if not new_records:
+            return
         self._jsonl.parent.mkdir(exist_ok=True)
         with open(self._jsonl, "a", encoding="utf-8") as f:
-            for record in resolved:
+            for record in new_records:
                 f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
     def load(self) -> list[dict]:
