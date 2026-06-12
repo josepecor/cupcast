@@ -131,10 +131,16 @@ class FreezeManager:
         resolved : predicciones puntuadas (listas para append al JSONL)
         pending  : predicciones sin resultado todavía
         """
-        result_index: dict[str, tuple[int, int]] = {
-            make_match_id(row.date, row.home, row.away): (int(row.home_goals), int(row.away_goals))
-            for row in df_results.itertuples(index=False)
-        }
+        # Incluye variantes ±1 día para absorber discrepancias entre martj42
+        # (fechas locales) y football-data.org (UTC) en partidos nocturnos.
+        result_index: dict[str, tuple[int, int]] = {}
+        for row in df_results.itertuples(index=False):
+            base = pd.Timestamp(row.date)
+            for delta in (-1, 0, 1):
+                d = (base + pd.Timedelta(days=delta)).strftime("%Y-%m-%d")
+                result_index[make_match_id(d, row.home, row.away)] = (
+                    int(row.home_goals), int(row.away_goals)
+                )
 
         resolved: list[dict] = []
         pending:  list[dict] = []

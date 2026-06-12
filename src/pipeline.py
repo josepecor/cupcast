@@ -62,7 +62,18 @@ def _load_live_predictions() -> list[dict]:
 
 
 def _results_set(df: pd.DataFrame) -> set[str]:
-    return {make_match_id(row.date, row.home, row.away) for row in df.itertuples(index=False)}
+    """
+    Genera el conjunto de IDs de partidos con resultado.
+    Incluye variantes ±1 día para absorber discrepancias entre fuentes que usan
+    fechas locales (martj42) vs UTC (football-data.org) en partidos nocturnos.
+    """
+    ids: set[str] = set()
+    for row in df.itertuples(index=False):
+        base = pd.Timestamp(row.date)
+        for delta in (-1, 0, 1):
+            d = (base + pd.Timedelta(days=delta)).strftime("%Y-%m-%d")
+            ids.add(make_match_id(d, row.home, row.away))
+    return ids
 
 
 def _upcoming_matches(df: pd.DataFrame, schedule: list[dict]) -> list[dict]:
@@ -87,12 +98,28 @@ def _phase_complete(df: pd.DataFrame, schedule: list[dict], phase: str, today: s
     missing = [
         m for m in schedule
         if m.get("fase") == phase
-        and m["fecha"][:10] <= today
+        and m["fecha"][:10] < today
         and "TBD" not in m.get("local", "")
         and "TBD" not in m.get("visitante", "")
         and (m.get("id") or make_match_id(m["fecha"][:10], m["local"], m["visitante"])) not in played
     ]
     return len(missing) == 0
+
+
+def _phase_fully_done(df: pd.DataFrame, schedule: list[dict], phase: str) -> bool:
+    """
+    True si TODOS los partidos conocidos de la fase tienen resultado.
+    A diferencia de _phase_complete (que solo mira partidos anteriores a hoy),
+    esta función mira el total de la fase — para saber si ya terminó del todo.
+    """
+    played = _results_set(df)
+    return all(
+        (m.get("id") or make_match_id(m["fecha"][:10], m["local"], m["visitante"])) in played
+        for m in schedule
+        if m.get("fase") == phase
+        and "TBD" not in m.get("local", "")
+        and "TBD" not in m.get("visitante", "")
+    )
 
 
 def _detect_current_phase(df: pd.DataFrame, schedule: list[dict], today: str) -> str:
@@ -118,7 +145,7 @@ def _detect_current_phase(df: pd.DataFrame, schedule: list[dict], today: str) ->
         if not phase_matches:
             continue
         started = any(m["fecha"][:10] <= today for m in phase_matches)
-        if started and not _phase_complete(df, schedule, phase, today):
+        if started and not _phase_fully_done(df, schedule, phase):
             return phase
     return "finalizado"
 
@@ -179,7 +206,7 @@ def run_daily(
         pending_count = len([
             m for m in schedule
             if m.get("fase") == current_phase
-            and m["fecha"][:10] <= today
+            and m["fecha"][:10] < today
             and "TBD" not in m.get("local", "")
             and "TBD" not in m.get("visitante", "")
             and (m.get("id") or make_match_id(m["fecha"][:10], m["local"], m["visitante"])) not in _results_set(df_all)
