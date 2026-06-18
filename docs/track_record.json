@@ -1,15 +1,15 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "actualizado": "2026-06-17T10:35:40Z",
-    "partidos_resueltos": 20
+    "actualizado": "2026-06-18T10:33:12Z",
+    "partidos_resueltos": 24
   },
   "agregados": {
-    "log_loss": 1.0663,
-    "brier": 0.6541,
-    "hit_rate": 0.45,
-    "baseline_log_loss": 1.2927,
-    "baseline_brier": 0.7403
+    "log_loss": 1.023,
+    "brier": 0.625,
+    "hit_rate": 0.5,
+    "baseline_log_loss": 1.2939,
+    "baseline_brier": 0.7467
   },
   "calibracion": [
     {
@@ -20,39 +20,39 @@
     },
     {
       "bucket": "0.1-0.2",
-      "predicho": 0.138,
-      "observado": 0.111,
-      "n": 9
-    },
-    {
-      "bucket": "0.2-0.3",
-      "predicho": 0.256,
-      "observado": 0.2,
-      "n": 15
-    },
-    {
-      "bucket": "0.3-0.4",
-      "predicho": 0.352,
-      "observado": 0.5,
+      "predicho": 0.141,
+      "observado": 0.083,
       "n": 12
     },
     {
+      "bucket": "0.2-0.3",
+      "predicho": 0.257,
+      "observado": 0.188,
+      "n": 16
+    },
+    {
+      "bucket": "0.3-0.4",
+      "predicho": 0.347,
+      "observado": 0.471,
+      "n": 17
+    },
+    {
       "bucket": "0.4-0.5",
-      "predicho": 0.467,
-      "observado": 0.429,
-      "n": 7
+      "predicho": 0.47,
+      "observado": 0.5,
+      "n": 8
     },
     {
       "bucket": "0.5-0.6",
-      "predicho": 0.525,
+      "predicho": 0.52,
       "observado": 0.0,
-      "n": 2
+      "n": 3
     },
     {
       "bucket": "0.6-0.7",
-      "predicho": 0.648,
-      "observado": 0.75,
-      "n": 4
+      "predicho": 0.64,
+      "observado": 0.8,
+      "n": 5
     },
     {
       "bucket": "0.7-0.8",
@@ -551,6 +551,102 @@
       "ganador": "local",
       "log_loss": 0.4041,
       "brier": 0.1723,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-17-Portugal-DR-Congo",
+      "fecha": "2026-06-17T17:00:00Z",
+      "fase": "grupos",
+      "grupo": "K",
+      "local": "Portugal",
+      "visitante": "DR Congo",
+      "prob_local": 0.5099,
+      "prob_empate": 0.3465,
+      "prob_visitante": 0.1436,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-17T10:35:28Z",
+      "prob_local_elo": 0.7906,
+      "prob_empate_elo": 0.0792,
+      "prob_visitante_elo": 0.1302,
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "resultado": "1-1",
+      "ganador": "empate",
+      "log_loss": 1.0599,
+      "brier": 0.7077,
+      "acertado": false,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-17-England-Croatia",
+      "fecha": "2026-06-17T20:00:00Z",
+      "fase": "grupos",
+      "grupo": "L",
+      "local": "England",
+      "visitante": "Croatia",
+      "prob_local": 0.4892,
+      "prob_empate": 0.3293,
+      "prob_visitante": 0.1815,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-17T10:35:28Z",
+      "prob_local_elo": 0.5219,
+      "prob_empate_elo": 0.1963,
+      "prob_visitante_elo": 0.2818,
+      "goles_local": 4,
+      "goles_visitante": 2,
+      "resultado": "4-2",
+      "ganador": "local",
+      "log_loss": 0.715,
+      "brier": 0.4023,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-17-Ghana-Panama",
+      "fecha": "2026-06-17T23:00:00Z",
+      "fase": "grupos",
+      "grupo": "L",
+      "local": "Ghana",
+      "visitante": "Panama",
+      "prob_local": 0.3851,
+      "prob_empate": 0.3112,
+      "prob_visitante": 0.3036,
+      "marcador_probable": "1-1",
+      "fecha_prediccion": "2026-06-17T10:35:28Z",
+      "prob_local_elo": 0.1937,
+      "prob_empate_elo": 0.1238,
+      "prob_visitante_elo": 0.6824,
+      "goles_local": 1,
+      "goles_visitante": 0,
+      "resultado": "1-0",
+      "ganador": "local",
+      "log_loss": 0.9543,
+      "brier": 0.5671,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-18-Uzbekistan-Colombia",
+      "fecha": "2026-06-18T02:00:00Z",
+      "fase": "grupos",
+      "grupo": "K",
+      "local": "Uzbekistan",
+      "visitante": "Colombia",
+      "prob_local": 0.1254,
+      "prob_empate": 0.2667,
+      "prob_visitante": 0.6079,
+      "marcador_probable": "0-1",
+      "fecha_prediccion": "2026-06-17T10:35:28Z",
+      "prob_local_elo": 0.1899,
+      "prob_empate_elo": 0.121,
+      "prob_visitante_elo": 0.6891,
+      "goles_local": 1,
+      "goles_visitante": 3,
+      "resultado": "1-3",
+      "ganador": "visitante",
+      "log_loss": 0.4977,
+      "brier": 0.2406,
       "acertado": true,
       "sorpresa": false
     }
