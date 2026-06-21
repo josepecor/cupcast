@@ -1,46 +1,46 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "actualizado": "2026-06-20T10:03:29Z",
-    "partidos_resueltos": 32
+    "actualizado": "2026-06-21T10:17:00Z",
+    "partidos_resueltos": 36
   },
   "agregados": {
-    "log_loss": 0.9667,
-    "brier": 0.584,
-    "hit_rate": 0.5312,
-    "baseline_log_loss": 1.1608,
-    "baseline_brier": 0.6673
+    "log_loss": 0.9612,
+    "brier": 0.5827,
+    "hit_rate": 0.5556,
+    "baseline_log_loss": 1.1438,
+    "baseline_brier": 0.6525
   },
   "calibracion": [
     {
       "bucket": "0.0-0.1",
-      "predicho": 0.049,
-      "observado": 0.222,
-      "n": 9
+      "predicho": 0.048,
+      "observado": 0.182,
+      "n": 11
     },
     {
       "bucket": "0.1-0.2",
-      "predicho": 0.144,
-      "observado": 0.062,
-      "n": 16
+      "predicho": 0.146,
+      "observado": 0.111,
+      "n": 18
     },
     {
       "bucket": "0.2-0.3",
-      "predicho": 0.256,
-      "observado": 0.273,
-      "n": 22
+      "predicho": 0.251,
+      "observado": 0.24,
+      "n": 25
     },
     {
       "bucket": "0.3-0.4",
-      "predicho": 0.342,
-      "observado": 0.381,
-      "n": 21
+      "predicho": 0.341,
+      "observado": 0.364,
+      "n": 22
     },
     {
       "bucket": "0.4-0.5",
-      "predicho": 0.467,
-      "observado": 0.462,
-      "n": 13
+      "predicho": 0.466,
+      "observado": 0.5,
+      "n": 14
     },
     {
       "bucket": "0.5-0.6",
@@ -50,21 +50,21 @@
     },
     {
       "bucket": "0.6-0.7",
-      "predicho": 0.646,
-      "observado": 0.857,
-      "n": 7
+      "predicho": 0.64,
+      "observado": 0.875,
+      "n": 8
     },
     {
       "bucket": "0.7-0.8",
-      "predicho": 0.707,
+      "predicho": 0.712,
       "observado": 1.0,
-      "n": 1
+      "n": 2
     },
     {
       "bucket": "0.8-0.9",
       "predicho": 0.848,
-      "observado": 0.5,
-      "n": 2
+      "observado": 0.333,
+      "n": 3
     },
     {
       "bucket": "0.9-1.0",
@@ -841,6 +841,102 @@
       "brier": 0.743,
       "acertado": false,
       "sorpresa": true
+    },
+    {
+      "id": "2026-06-20-Netherlands-Sweden",
+      "fecha": "2026-06-20T17:00:00Z",
+      "fase": "grupos",
+      "grupo": "F",
+      "local": "Netherlands",
+      "visitante": "Sweden",
+      "prob_local": 0.6034,
+      "prob_empate": 0.2004,
+      "prob_visitante": 0.1963,
+      "marcador_probable": "2-1",
+      "fecha_prediccion": "2026-06-20T10:03:19Z",
+      "prob_local_elo": 0.6231,
+      "prob_empate_elo": 0.1497,
+      "prob_visitante_elo": 0.2273,
+      "goles_local": 5,
+      "goles_visitante": 1,
+      "resultado": "5-1",
+      "ganador": "local",
+      "log_loss": 0.5052,
+      "brier": 0.236,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-20-Germany-Côte-d'Ivoire",
+      "fecha": "2026-06-20T20:00:00Z",
+      "fase": "grupos",
+      "grupo": "E",
+      "local": "Germany",
+      "visitante": "Côte d'Ivoire",
+      "prob_local": 0.4584,
+      "prob_empate": 0.3158,
+      "prob_visitante": 0.2259,
+      "marcador_probable": "1-1",
+      "fecha_prediccion": "2026-06-20T10:03:19Z",
+      "prob_local_elo": 0.5984,
+      "prob_empate_elo": 0.1607,
+      "prob_visitante_elo": 0.2409,
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "resultado": "2-1",
+      "ganador": "local",
+      "log_loss": 0.78,
+      "brier": 0.4441,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-21-Ecuador-Curaçao",
+      "fecha": "2026-06-21T00:00:00Z",
+      "fase": "grupos",
+      "grupo": "E",
+      "local": "Ecuador",
+      "visitante": "Curaçao",
+      "prob_local": 0.8484,
+      "prob_empate": 0.1285,
+      "prob_visitante": 0.0231,
+      "marcador_probable": "2-0",
+      "fecha_prediccion": "2026-06-20T10:03:19Z",
+      "prob_local_elo": 0.8305,
+      "prob_empate_elo": 0.0634,
+      "prob_visitante_elo": 0.1061,
+      "goles_local": 0,
+      "goles_visitante": 0,
+      "resultado": "0-0",
+      "ganador": "empate",
+      "log_loss": 2.0518,
+      "brier": 1.4798,
+      "acertado": false,
+      "sorpresa": true
+    },
+    {
+      "id": "2026-06-21-Tunisia-Japan",
+      "fecha": "2026-06-21T04:00:00Z",
+      "fase": "grupos",
+      "grupo": "F",
+      "local": "Tunisia",
+      "visitante": "Japan",
+      "prob_local": 0.0649,
+      "prob_empate": 0.2171,
+      "prob_visitante": 0.718,
+      "marcador_probable": "0-1",
+      "fecha_prediccion": "2026-06-20T10:03:19Z",
+      "prob_local_elo": 0.1543,
+      "prob_empate_elo": 0.0955,
+      "prob_visitante_elo": 0.7502,
+      "goles_local": 0,
+      "goles_visitante": 4,
+      "resultado": "0-4",
+      "ganador": "visitante",
+      "log_loss": 0.3313,
+      "brier": 0.1309,
+      "acertado": true,
+      "sorpresa": false
     }
   ]
 }
