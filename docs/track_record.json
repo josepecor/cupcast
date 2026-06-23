@@ -1,40 +1,40 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "actualizado": "2026-06-22T10:56:57Z",
-    "partidos_resueltos": 40
+    "actualizado": "2026-06-23T10:17:46Z",
+    "partidos_resueltos": 44
   },
   "agregados": {
-    "log_loss": 0.9503,
-    "brier": 0.5773,
-    "hit_rate": 0.55,
-    "baseline_log_loss": 1.1458,
-    "baseline_brier": 0.6557
+    "log_loss": 0.9053,
+    "brier": 0.5446,
+    "hit_rate": 0.5909,
+    "baseline_log_loss": 1.0815,
+    "baseline_brier": 0.6152
   },
   "calibracion": [
     {
       "bucket": "0.0-0.1",
       "predicho": 0.049,
-      "observado": 0.167,
-      "n": 12
+      "observado": 0.154,
+      "n": 13
     },
     {
       "bucket": "0.1-0.2",
-      "predicho": 0.149,
-      "observado": 0.091,
-      "n": 22
+      "predicho": 0.148,
+      "observado": 0.077,
+      "n": 26
     },
     {
       "bucket": "0.2-0.3",
-      "predicho": 0.251,
-      "observado": 0.269,
-      "n": 26
+      "predicho": 0.25,
+      "observado": 0.25,
+      "n": 28
     },
     {
       "bucket": "0.3-0.4",
       "predicho": 0.342,
-      "observado": 0.375,
-      "n": 24
+      "observado": 0.36,
+      "n": 25
     },
     {
       "bucket": "0.4-0.5",
@@ -44,21 +44,21 @@
     },
     {
       "bucket": "0.5-0.6",
-      "predicho": 0.529,
-      "observado": 0.0,
-      "n": 5
+      "predicho": 0.535,
+      "observado": 0.286,
+      "n": 7
     },
     {
       "bucket": "0.6-0.7",
-      "predicho": 0.64,
-      "observado": 0.875,
-      "n": 8
+      "predicho": 0.645,
+      "observado": 0.889,
+      "n": 9
     },
     {
       "bucket": "0.7-0.8",
-      "predicho": 0.73,
+      "predicho": 0.743,
       "observado": 1.0,
-      "n": 3
+      "n": 4
     },
     {
       "bucket": "0.8-0.9",
@@ -1031,6 +1031,102 @@
       "ganador": "visitante",
       "log_loss": 0.7048,
       "brier": 0.4022,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-22-Argentina-Austria",
+      "fecha": "2026-06-22T17:00:00Z",
+      "fase": "grupos",
+      "grupo": "J",
+      "local": "Argentina",
+      "visitante": "Austria",
+      "prob_local": 0.5539,
+      "prob_empate": 0.34,
+      "prob_visitante": 0.1061,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-22T10:56:45Z",
+      "prob_local_elo": 0.756,
+      "prob_empate_elo": 0.0932,
+      "prob_visitante_elo": 0.1509,
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "resultado": "2-0",
+      "ganador": "local",
+      "log_loss": 0.5908,
+      "brier": 0.3259,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-22-France-Iraq",
+      "fecha": "2026-06-22T21:00:00Z",
+      "fase": "grupos",
+      "grupo": "I",
+      "local": "France",
+      "visitante": "Iraq",
+      "prob_local": 0.7836,
+      "prob_empate": 0.1638,
+      "prob_visitante": 0.0525,
+      "marcador_probable": "2-0",
+      "fecha_prediccion": "2026-06-22T10:56:45Z",
+      "prob_local_elo": 0.8817,
+      "prob_empate_elo": 0.0437,
+      "prob_visitante_elo": 0.0746,
+      "goles_local": 3,
+      "goles_visitante": 0,
+      "resultado": "3-0",
+      "ganador": "local",
+      "log_loss": 0.2439,
+      "brier": 0.0764,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-23-Norway-Senegal",
+      "fecha": "2026-06-23T00:00:00Z",
+      "fase": "grupos",
+      "grupo": "I",
+      "local": "Norway",
+      "visitante": "Senegal",
+      "prob_local": 0.547,
+      "prob_empate": 0.2571,
+      "prob_visitante": 0.1959,
+      "marcador_probable": "1-1",
+      "fecha_prediccion": "2026-06-22T10:56:45Z",
+      "prob_local_elo": 0.4877,
+      "prob_empate_elo": 0.213,
+      "prob_visitante_elo": 0.2993,
+      "goles_local": 3,
+      "goles_visitante": 2,
+      "resultado": "3-2",
+      "ganador": "local",
+      "log_loss": 0.6033,
+      "brier": 0.3097,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-23-Jordan-Algeria",
+      "fecha": "2026-06-23T03:00:00Z",
+      "fase": "grupos",
+      "grupo": "J",
+      "local": "Jordan",
+      "visitante": "Algeria",
+      "prob_local": 0.1114,
+      "prob_empate": 0.2078,
+      "prob_visitante": 0.6808,
+      "marcador_probable": "0-2",
+      "fecha_prediccion": "2026-06-22T10:56:45Z",
+      "prob_local_elo": 0.2759,
+      "prob_empate_elo": 0.191,
+      "prob_visitante_elo": 0.533,
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "resultado": "1-2",
+      "ganador": "visitante",
+      "log_loss": 0.3845,
+      "brier": 0.1575,
       "acertado": true,
       "sorpresa": false
     }
