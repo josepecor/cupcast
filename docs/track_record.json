@@ -1,64 +1,64 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "actualizado": "2026-06-24T10:07:00Z",
-    "partidos_resueltos": 48
+    "actualizado": "2026-06-25T10:07:35Z",
+    "partidos_resueltos": 52
   },
   "agregados": {
-    "log_loss": 0.8918,
-    "brier": 0.537,
-    "hit_rate": 0.6042,
-    "baseline_log_loss": 1.0805,
-    "baseline_brier": 0.6099
+    "log_loss": 0.8811,
+    "brier": 0.5269,
+    "hit_rate": 0.6154,
+    "baseline_log_loss": 1.0558,
+    "baseline_brier": 0.5976
   },
   "calibracion": [
     {
       "bucket": "0.0-0.1",
       "predicho": 0.055,
-      "observado": 0.133,
-      "n": 15
-    },
-    {
-      "bucket": "0.1-0.2",
-      "predicho": 0.149,
-      "observado": 0.071,
-      "n": 28
-    },
-    {
-      "bucket": "0.2-0.3",
-      "predicho": 0.248,
-      "observado": 0.258,
-      "n": 31
-    },
-    {
-      "bucket": "0.3-0.4",
-      "predicho": 0.342,
-      "observado": 0.346,
-      "n": 26
-    },
-    {
-      "bucket": "0.4-0.5",
-      "predicho": 0.469,
-      "observado": 0.562,
+      "observado": 0.125,
       "n": 16
     },
     {
+      "bucket": "0.1-0.2",
+      "predicho": 0.15,
+      "observado": 0.097,
+      "n": 31
+    },
+    {
+      "bucket": "0.2-0.3",
+      "predicho": 0.247,
+      "observado": 0.235,
+      "n": 34
+    },
+    {
+      "bucket": "0.3-0.4",
+      "predicho": 0.341,
+      "observado": 0.333,
+      "n": 27
+    },
+    {
+      "bucket": "0.4-0.5",
+      "predicho": 0.47,
+      "observado": 0.529,
+      "n": 17
+    },
+    {
       "bucket": "0.5-0.6",
-      "predicho": 0.535,
-      "observado": 0.286,
-      "n": 7
+      "predicho": 0.539,
+      "observado": 0.375,
+      "n": 8
     },
     {
       "bucket": "0.6-0.7",
       "predicho": 0.651,
-      "observado": 0.833,
-      "n": 12
+      "observado": 0.846,
+      "n": 13
     },
     {
       "bucket": "0.7-0.8",
-      "predicho": 0.743,
+      "predicho": 0.737,
       "observado": 1.0,
-      "n": 4
+      "n": 5
     },
     {
       "bucket": "0.8-0.9",
@@ -1225,6 +1225,102 @@
       "brier": 0.4252,
       "acertado": true,
       "sorpresa": false
+    },
+    {
+      "id": "2026-06-24-Bosnia-and-Herzegovina-Qatar",
+      "fecha": "2026-06-24T19:00:00Z",
+      "fase": "grupos",
+      "grupo": "B",
+      "local": "Bosnia and Herzegovina",
+      "visitante": "Qatar",
+      "prob_local": 0.6517,
+      "prob_empate": 0.2309,
+      "prob_visitante": 0.1174,
+      "marcador_probable": "2-0",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.4416,
+      "prob_empate_elo": 0.2362,
+      "prob_visitante_elo": 0.3222,
+      "goles_local": 3,
+      "goles_visitante": 1,
+      "resultado": "3-1",
+      "ganador": "local",
+      "log_loss": 0.4282,
+      "brier": 0.1884,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-24-Morocco-Haiti",
+      "fecha": "2026-06-24T22:00:00Z",
+      "fase": "grupos",
+      "grupo": "C",
+      "local": "Morocco",
+      "visitante": "Haiti",
+      "prob_local": 0.71,
+      "prob_empate": 0.2362,
+      "prob_visitante": 0.0538,
+      "marcador_probable": "1-0",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.788,
+      "prob_empate_elo": 0.0802,
+      "prob_visitante_elo": 0.1317,
+      "goles_local": 4,
+      "goles_visitante": 2,
+      "resultado": "4-2",
+      "ganador": "local",
+      "log_loss": 0.3425,
+      "brier": 0.1428,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-24-Scotland-Brazil",
+      "fecha": "2026-06-24T22:00:00Z",
+      "fase": "grupos",
+      "grupo": "C",
+      "local": "Scotland",
+      "visitante": "Brazil",
+      "prob_local": 0.185,
+      "prob_empate": 0.2513,
+      "prob_visitante": 0.5638,
+      "marcador_probable": "1-1",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.1845,
+      "prob_empate_elo": 0.117,
+      "prob_visitante_elo": 0.6984,
+      "goles_local": 0,
+      "goles_visitante": 3,
+      "resultado": "0-3",
+      "ganador": "visitante",
+      "log_loss": 0.5731,
+      "brier": 0.2876,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-25-South-Africa-South-Korea",
+      "fecha": "2026-06-25T01:00:00Z",
+      "fase": "grupos",
+      "grupo": "A",
+      "local": "South Africa",
+      "visitante": "South Korea",
+      "prob_local": 0.1891,
+      "prob_empate": 0.3188,
+      "prob_visitante": 0.4921,
+      "marcador_probable": "0-1",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.1975,
+      "prob_empate_elo": 0.1266,
+      "prob_visitante_elo": 0.6758,
+      "goles_local": 1,
+      "goles_visitante": 0,
+      "resultado": "1-0",
+      "ganador": "local",
+      "log_loss": 1.6655,
+      "brier": 1.0014,
+      "acertado": false,
+      "sorpresa": true
     }
   ]
 }
