@@ -1,40 +1,40 @@
 {
   "metadata": {
     "torneo": "FIFA World Cup 2026",
-    "actualizado": "2026-06-25T10:07:35Z",
-    "partidos_resueltos": 52
+    "actualizado": "2026-06-26T10:09:30Z",
+    "partidos_resueltos": 57
   },
   "agregados": {
-    "log_loss": 0.8811,
-    "brier": 0.5269,
-    "hit_rate": 0.6154,
-    "baseline_log_loss": 1.0558,
-    "baseline_brier": 0.5976
+    "log_loss": 0.8835,
+    "brier": 0.5293,
+    "hit_rate": 0.614,
+    "baseline_log_loss": 1.0548,
+    "baseline_brier": 0.5991
   },
   "calibracion": [
     {
       "bucket": "0.0-0.1",
-      "predicho": 0.055,
-      "observado": 0.125,
-      "n": 16
+      "predicho": 0.054,
+      "observado": 0.111,
+      "n": 18
     },
     {
       "bucket": "0.1-0.2",
       "predicho": 0.15,
-      "observado": 0.097,
-      "n": 31
+      "observado": 0.114,
+      "n": 35
     },
     {
       "bucket": "0.2-0.3",
       "predicho": 0.247,
-      "observado": 0.235,
-      "n": 34
+      "observado": 0.257,
+      "n": 35
     },
     {
       "bucket": "0.3-0.4",
-      "predicho": 0.341,
-      "observado": 0.333,
-      "n": 27
+      "predicho": 0.343,
+      "observado": 0.312,
+      "n": 32
     },
     {
       "bucket": "0.4-0.5",
@@ -56,15 +56,15 @@
     },
     {
       "bucket": "0.7-0.8",
-      "predicho": 0.737,
-      "observado": 1.0,
-      "n": 5
+      "predicho": 0.74,
+      "observado": 0.857,
+      "n": 7
     },
     {
       "bucket": "0.8-0.9",
-      "predicho": 0.848,
-      "observado": 0.333,
-      "n": 3
+      "predicho": 0.842,
+      "observado": 0.5,
+      "n": 4
     },
     {
       "bucket": "0.9-1.0",
@@ -1321,6 +1321,126 @@
       "brier": 1.0014,
       "acertado": false,
       "sorpresa": true
+    },
+    {
+      "id": "2026-06-25-Ecuador-Germany",
+      "fecha": "2026-06-25T20:00:00Z",
+      "fase": "grupos",
+      "grupo": "E",
+      "local": "Ecuador",
+      "visitante": "Germany",
+      "prob_local": 0.235,
+      "prob_empate": 0.3684,
+      "prob_visitante": 0.3966,
+      "marcador_probable": "0-0",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.2955,
+      "prob_empate_elo": 0.2093,
+      "prob_visitante_elo": 0.4952,
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "resultado": "2-1",
+      "ganador": "local",
+      "log_loss": 1.4482,
+      "brier": 0.8782,
+      "acertado": false,
+      "sorpresa": true
+    },
+    {
+      "id": "2026-06-25-Curaçao-Côte-d'Ivoire",
+      "fecha": "2026-06-25T20:00:00Z",
+      "fase": "grupos",
+      "grupo": "E",
+      "local": "Curaçao",
+      "visitante": "Côte d'Ivoire",
+      "prob_local": 0.0441,
+      "prob_empate": 0.1686,
+      "prob_visitante": 0.7873,
+      "marcador_probable": "0-2",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.2016,
+      "prob_empate_elo": 0.1297,
+      "prob_visitante_elo": 0.6686,
+      "goles_local": 0,
+      "goles_visitante": 2,
+      "resultado": "0-2",
+      "ganador": "visitante",
+      "log_loss": 0.2391,
+      "brier": 0.0756,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-25-Tunisia-Netherlands",
+      "fecha": "2026-06-25T23:00:00Z",
+      "fase": "grupos",
+      "grupo": "F",
+      "local": "Tunisia",
+      "visitante": "Netherlands",
+      "prob_local": 0.0478,
+      "prob_empate": 0.1295,
+      "prob_visitante": 0.8226,
+      "marcador_probable": "0-2",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.1134,
+      "prob_empate_elo": 0.0682,
+      "prob_visitante_elo": 0.8184,
+      "goles_local": 1,
+      "goles_visitante": 3,
+      "resultado": "1-3",
+      "ganador": "visitante",
+      "log_loss": 0.1953,
+      "brier": 0.0505,
+      "acertado": true,
+      "sorpresa": false
+    },
+    {
+      "id": "2026-06-25-Japan-Sweden",
+      "fecha": "2026-06-25T23:00:00Z",
+      "fase": "grupos",
+      "grupo": "F",
+      "local": "Japan",
+      "visitante": "Sweden",
+      "prob_local": 0.7113,
+      "prob_empate": 0.1876,
+      "prob_visitante": 0.1011,
+      "marcador_probable": "2-0",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.6644,
+      "prob_empate_elo": 0.1316,
+      "prob_visitante_elo": 0.204,
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "resultado": "1-1",
+      "ganador": "empate",
+      "log_loss": 1.6734,
+      "brier": 1.1762,
+      "acertado": false,
+      "sorpresa": true
+    },
+    {
+      "id": "2026-06-26-Paraguay-Australia",
+      "fecha": "2026-06-26T02:00:00Z",
+      "fase": "grupos",
+      "grupo": "D",
+      "local": "Paraguay",
+      "visitante": "Australia",
+      "prob_local": 0.3086,
+      "prob_empate": 0.3718,
+      "prob_visitante": 0.3196,
+      "marcador_probable": "0-0",
+      "fecha_prediccion": "2026-06-24T10:06:48Z",
+      "prob_local_elo": 0.3381,
+      "prob_empate_elo": 0.2537,
+      "prob_visitante_elo": 0.4081,
+      "goles_local": 0,
+      "goles_visitante": 0,
+      "resultado": "0-0",
+      "ganador": "empate",
+      "log_loss": 0.9894,
+      "brier": 0.592,
+      "acertado": true,
+      "sorpresa": false
     }
   ]
 }
