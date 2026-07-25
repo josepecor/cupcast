@@ -1,19 +1,11 @@
 name: Update predictions
 
-# Ejecuta el pipeline diario y despliega GitHub Pages.
+# Ejecuta el pipeline y despliega GitHub Pages.
 #
-# Frecuencia: una vez al día a las 9:00 UTC.
-# Los partidos del Mundial 2026 son en Norteamérica; el último acaba ~03:00 UTC.
-# martj42/international_results actualiza entre las 05:00 y las 08:20 UTC —
-# las 9:00 UTC dan margen suficiente para que los resultados estén disponibles.
-#
-# Nota: los crons de Actions son best-effort (+/- 30 min habitual) y se
-# desactivan solos si el repo no tiene actividad ~60 días. El guard de
-# completitud en pipeline.py protege contra ejecuciones desfasadas.
+# Disparo manual únicamente (workflow_dispatch). La ejecución diaria
+# programada (cron) se ha desactivado.
 
 on:
-  schedule:
-    - cron: '0 9 * * *'           # diario 9:00 UTC (post-update martj42)
   workflow_dispatch:               # disparo manual desde la UI de Actions
 
 permissions:
